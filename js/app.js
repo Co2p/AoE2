@@ -47,9 +47,9 @@ function updateInformation(id) {
 }
 
 let civDropdown = document.getElementById("civ-dropdown");
-civDropdown.addEventListener("change", (event) => {
+civDropdown.onchange = (event) => {
     updateInformation(event.target.value)
-})
+};
 
 populateDropdown("civ-dropdown", civData.Civs);
 updateInformation(0)
