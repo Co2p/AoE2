@@ -47,7 +47,7 @@ function updateInformation(id) {
 }
 
 let civDropdown = document.getElementById("civ-dropdown");
-civDropdown.addEventListener("click", (event) => {
+civDropdown.addEventListener("change", (event) => {
     updateInformation(event.target.value)
 })
 
