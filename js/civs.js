@@ -491,6 +491,10 @@ const civData = {
     ],
     specialities: [
         {
+            name: "(Select speciality)",
+            id: -1
+        },
+        {
             name: "Archers",
             id: 0
         },
@@ -527,7 +531,7 @@ const civData = {
             id: 8
         },
         {
-            name: "Monk",
+            name: "Monks",
             id: 9
         },
         {
@@ -542,53 +546,52 @@ const civData = {
             name: "Towers",
             id: 12
         }
+    ],
+    uniqueUnits: [
+        "Jaguar Warior",//0
+        "Longbowman",//1
+        "Konnik",//2
+        "Camel Archer",//3
+        "Arambai",//4
+        "Cataphract",//5
+        "Woad Raider",//6
+        "Chu Ko Nu",//7
+        "Kipchak",//8
+        "Shotel Warrior",//9
+        "Throwing Axeman",//10
+        "Genitour",//11
+        "Huskarl",//12
+        "Tarkan",//13
+        "Kamayuk",//14
+        "Slinger",//15
+        "Elephant Archer",//16
+        "Imperial Camel Rider",//17
+        "Genoese Crossbowman",//18
+        "Condottiero",//19
+        "Samurai",//20
+        "Ballista Elephant", //21
+        "War Wagon",//22
+        "Turtle Ship",//23
+        "Leitis",//24
+        "Magyar Huszar",//25
+        "Karambit Warrior",//26
+        "Gbeto",//27
+        "Plumed Archer",//28
+        "Mangudai",//29
+        "War Elephant",//30
+        "Organ Gun",//31
+        "Caravel",//32
+        "Mameluke",//33
+        "Boyar",//34
+        "Conquistador",//35
+        "Missionary",//36
+        "Keshik",//37
+        "Flaming Camel",//38
+        "Teutonic Knight",//39
+        "Janissary",//40
+        "Rattan Archer",//41
+        "Imperial Skirmisher",//42
+        "Berserk",//43
+        "Longboat",//44
     ]
 };
-
-const uniqueUnits = [
-    "Jaguar Warior",//0
-    "Longbowman",//1
-    "Konnik",//2
-    "Camel Archer",//3
-    "Arambai",//4
-    "Cataphract",//5
-    "Woad Raider",//6
-    "Chu Ko Nu",//7
-    "Kipchak",//8
-    "Shotel Warrior",//9
-    "Throwing Axeman",//10
-    "Genitour",//11
-    "Huskarl",//12
-    "Tarkan",//13
-    "Kamayuk",//14
-    "Slinger",//15
-    "Elephant Archer",//16
-    "Imperial Camel Rider",//17
-    "Genoese Crossbowman",//18
-    "Condottiero",//19
-    "Samurai",//20
-    "Ballista Elephant", //21
-    "War Wagon",//22
-    "Turtle Ship",//23
-    "Leitis",//24
-    "Magyar Huszar",//25
-    "Karambit Warrior",//26
-    "Gbeto",//27
-    "Plumed Archer",//28
-    "Mangudai",//29
-    "War Elephant",//30
-    "Organ Gun",//31
-    "Caravel",//32
-    "Mameluke",//33
-    "Boyar",//34
-    "Conquistador",//35
-    "Missionary",//36
-    "Keshik",//37
-    "Flaming Camel",//38
-    "Teutonic Knight",//39
-    "Janissary",//40
-    "Rattan Archer",//41
-    "Imperial Skirmisher",//42
-    "Berserk",//43
-    "Longboat",//44
-]

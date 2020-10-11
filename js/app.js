@@ -38,7 +38,7 @@ function updateInformation(data) {
     speciality.className = classes;
 
     uu.appendChild(header("Unique Unit", headerSize));
-    uu.appendChild(listify(data.UU, uniqueUnits));
+    uu.appendChild(listify(data.UU, civData.uniqueUnits));
 
     iut.appendChild(header("Unique Tech", headerSize));
     iut.appendChild(document.createTextNode(data.IUT));
@@ -112,13 +112,14 @@ function specDropdown() {
     specialitiesDropdown.style = "";
     specialitiesDropdown.onchange = (event) => {
         resetInfo();
-        
-        civData.Civs.forEach(x => {
-            if (x.speciality.includes(Number(event.target.value)))
-            {
-                updateInformation(x);
-            }
-        })
+        if (event.target.value !== "-1"){
+            civData.Civs.forEach(x => {
+                if (x.speciality.includes(Number(event.target.value)))
+                {
+                    updateInformation(x);
+                }
+            });
+        }
     };
     
     populateDropdown(specialitiesDropdown, civData.specialities);
