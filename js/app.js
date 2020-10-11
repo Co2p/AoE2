@@ -52,8 +52,8 @@ function updateInformation(data) {
     civbonus.appendChild(header("Civ Bonus", headerSize));
     civbonus.appendChild(listify(data.CivBonus));
 
-    speciality.appendChild(header("speciality", headerSize));
-    speciality.appendChild(listify(data.speciality, civData.specialities.map(x => x.name)));
+    speciality.appendChild(header("Speciality", headerSize));
+    speciality.appendChild(listify(data.speciality, civData.specialities.slice(1,civData.length).map(x => x.name)));
     
     civDiv.appendChild(speciality);
     civDiv.appendChild(uu);
