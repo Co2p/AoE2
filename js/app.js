@@ -34,16 +34,19 @@ function updateInformation(data) {
     civDiv.appendChild(header(data.name, "h1"));
 
     const uu = createStatElement(header("Unique Unit", headerSize), listify(data.UU, civData.uniqueUnits.map(x => x.name)));
-    const iut = createStatElement(header("Unique Tech", headerSize), document.createTextNode(data.IUT));
-    const cut = createStatElement(header("Civ Unique Tech", headerSize), document.createTextNode(data.CUT));
+
+    const cut = createStatElement(header(`Castle Unique Tech: ${data.technology.castle.name}`, headerSize), document.createTextNode(data.technology.castle.description));
+
+    const iut = createStatElement(header(`Imperial Unique Tech: ${data.technology.imperial.name}`, headerSize), document.createTextNode(data.technology.imperial.description));
+
     const teambonus = createStatElement(header("Team Bonus", headerSize), document.createTextNode(data.TeamBonus));
     const civbonus = createStatElement(header("Civ Bonus", headerSize), listify(data.CivBonus));
     const speciality = createStatElement(header("Speciality", headerSize), listify(data.speciality, civData.specialities.slice(1, civData.length).map(x => x.name)));
 
     civDiv.appendChild(speciality);
     civDiv.appendChild(uu);
-    civDiv.appendChild(iut);
     civDiv.appendChild(cut);
+    civDiv.appendChild(iut);
     civDiv.appendChild(teambonus);
     civDiv.appendChild(civbonus);
 
@@ -98,7 +101,7 @@ function header(text, size) {
  * @param {DropdownItem[]} ddlItems Dropdown items
  */
 function dropdownSort(ddlItems) {
-    return ddlItems.sort((a,b) => {
+    return ddlItems.sort((a, b) => {
         if (a.id === -1) {
             return -1;
         }
@@ -127,14 +130,24 @@ function techDropdown() {
             updateInformation(data[0]);
         }
     };
-    let ddlItems = civData.Civs.map(x => {
-        let r1 = {};
-        let r2 = {};
-        r1.name = x.CUT;
-        r2.name = x.IUT;
-        r1.id = x.id;
-        r2.id = x.id;
-        return r1, r2;
+    let ddlItems = [];
+    civData.Civs.forEach(x => {
+        if (x.id !== -1) {
+            let castle = {};
+            let imp = {};
+            castle.name = `${x.technology.castle.name} (${x.technology.castle.description})`;
+            castle.id = x.id;
+            ddlItems.push(castle);
+            imp.name = `${x.technology.imperial.name} (${x.technology.imperial.description})`;
+            imp.id = x.id;
+            ddlItems.push(imp);
+        }
+        else {
+            const tmp = {};
+            tmp.name = x.technology.castle.name;
+            tmp.id = x.id;
+            ddlItems.push(tmp);
+        }
     });
 
     populateDropdown(techDropdown, dropdownSort(ddlItems));

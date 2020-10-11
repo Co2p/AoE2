@@ -4,8 +4,16 @@ const civData = {
             id: -1,
             name: "(Select Civ)",
             speciality: [],
-            CUT: "(Select technology)",
-            IUT: "(Select technology)",
+            technology: {
+                castle: {
+                    name: "(Select technology)",
+                    description: ""
+                },
+                imperial: {
+                    name: "(Select technology)",
+                    description: ""
+                }
+            },
         },
         {
             id: 0,
@@ -18,8 +26,16 @@ const civData = {
                 "All military units are created 18% faster",
                 "Monks gain 5 HP for every researched Monastery technology",
                 "Start with +50 gold"],
-            CUT: "Atlatl (attack and range of Skirmishers +1)",
-            IUT: "Garland Wars (increases infantry attack by +4)",
+            technology: {
+                castle: {
+                    name: "Atlatl",
+                    description: "Attack and range of Skirmishers +1"
+                },
+                imperial: {
+                    name: "Garland Wars",
+                    description: "Infantry attack +4",
+                }
+            },
             Wonder: "Great Pyramid of Tenochtitlan",
         },
         {
@@ -31,8 +47,16 @@ const civData = {
             CivBonus: ["Villagers move +10% faster",
                 "Stable units are 15%/20% cheaper in the Castle/Imperial Age",
                 "Ships move +10% faster"],
-            CUT: "Kasbah (team Castles work +25% faster)",
-            IUT: "Maghrabi Camels (camel troops regenerate)",
+            technology: {
+                castle: {
+                    name: "Kasbah",
+                    description: "Team Castles work +25% faster"
+                },
+                imperial: {
+                    name: "Maghrabi Camels",
+                    description: "Camel troops regenerate"
+                }
+            },
             Wonder: "Hassan Tower",
         },
         {
@@ -44,8 +68,16 @@ const civData = {
             CivBonus: ["Town Centers cost -50% wood starting in the Castle Age",
                 "Foot archers (except Skirmishers) have +1/+2 range in the Castle/Imperial Age",
                 "Shepherds work 25% faster"],
-            CUT: "Yeomen (Foot archers +1 range and towers +2 attack)",
-            IUT: "Warwolf (Trebuchets blast damage and 100% accuracy against units)",
+            technology: {
+                castle: {
+                    name: "Yeomen",
+                    description: "Foot archers +1 range and towers +2 attack"
+                },
+                imperial: {
+                    name: "Warwolf",
+                    description: "Trebuchets blast damage and 100% accuracy against units"
+                }
+            },
             Wonder: "Chichester Cathedral",
         },
         {
@@ -57,8 +89,16 @@ const civData = {
             CivBonus: ["Militia units are upgraded for free",
                 "Town Centers cost -50% stone",
                 "Can build Krepost"],
-            CUT: "Stirrups (Light Cavalry, Knight and Konniks attack 33% faster)",
-            IUT: "Bagains (Militia +5 melee armor)",
+            technology: {
+                castle: {
+                    name: "Stirrups",
+                    description: "Light Cavalry, Knight and Konniks attack 33% faster"
+                },
+                imperial: {
+                    name: "Bagains",
+                    description: "Militia +5 melee armor"
+                }
+            },
             Wonder: "Preslav Round Church",
         },
         {
@@ -70,8 +110,16 @@ const civData = {
             CivBonus: ["Lumber Camp technologies are free",
                 "Infantry has +1/+2/+3 attack in the Feudal/Castle/Imperial Age",
                 "Monastery technologies are 50% cheaper"],
-            CUT: "Howdah (Battle Elephants +1/+1 armor)",
-            IUT: "Manipur Cavalry (Cavalry and Arambai +3 attack against buildings)",
+            technology: {
+                castle: {
+                    name: "Howdah",
+                    description: "Battle Elephants +1/+1 armor"
+                },
+                imperial: {
+                    name: "Manipur Cavalry",
+                    description: "Cavalry and Arambai +3 attack against buildings"
+                }
+            },
             Wonder: "Shwezigon Pagoda",
         },
         {
@@ -85,8 +133,16 @@ const civData = {
                 "Fire Ships fire 25% faster",
                 "Advancing to the Imperial Age is 33% cheaper",
                 "Town Watch is free"],
-            CUT: "Greek Fire (Fire Ships +1 range)",
-            IUT: "Logistica (Cataphracts deal trample damage)",
+            technology: {
+                castle: {
+                    name: "Greek Fire",
+                    description: "Fire Ships +1 range"
+                },
+                imperial: {
+                    name: "Logistica",
+                    description: "Cataphracts deal trample damage"
+                }
+            },
             Wonder: "Hagia Sophia",
         },
         {
@@ -99,8 +155,16 @@ const civData = {
                 "Lumberjacks work 15% faster",
                 "Siege weapons fire 25% faster",
                 "Enemy herdables can be converted regardless of enemy units next to them"],
-            CUT: "Stronghold (Castles and towers fire 25% faster)",
-            IUT: "Furor Celtica (Siege Workshop units have +40% HP)",
+            technology: {
+                castle: {
+                    name: "Stronghold",
+                    description: "Castles and towers fire 25% faster"
+                },
+                imperial: {
+                    name: "Furor Celtica",
+                    description: "Siege Workshop units have +40% HP"
+                }
+            },
             Wonder: "Rock of Cashel",
         },
         {
@@ -113,8 +177,16 @@ const civData = {
                 "Town Centers support ten population (instead of five) and have +5 Line of Sight",
                 "Technologies are 10%/15%/20% cheaper in the Feudal/Castle/Imperial Age",
                 "Demolition Ships have +50% HP"],
-            CUT: "Great Wall (Walls and towers +30% HP)",
-            IUT: "Rocketry (Chu Ko Nu +2, Scorpions +4 attack)",
+            technology: {
+                castle: {
+                    name: "Great Wall",
+                    description: "Walls and towers +30% HP"
+                },
+                imperial: {
+                    name: "Rocketry",
+                    description: "Chu Ko Nu +2, Scorpions +4 attack"
+                }
+            },
             Wonder: "Temple of Heaven",
         },
         {
@@ -126,8 +198,16 @@ const civData = {
             CivBonus: ["Can build an additional Town Center in the Feudal Age",
                 "Siege Workshop and Battering Ram available in the Feudal Age",
                 "Cavalry moves 5%/10%/15% faster in the Feudal/Castle/Imperial Age"],
-            CUT: "Steppe Husbandry (Scout Cavalry, Steppe Lancers and Cavalry Archers are trained 50% faster)",
-            IUT: "Cuman Mercenaries (team members can create 10 free Elite Kipchaks at the Castle)",
+            technology: {
+                castle: {
+                    name: "Steppe Husbandry",
+                    description: "Scout Cavalry, Steppe Lancers and Cavalry Archers are trained 50% faster"
+                },
+                imperial: {
+                    name: "Cuman Mercenaries",
+                    description: "Team members can create 10 free Elite Kipchaks at the Castle"
+                }
+            },
             Wonder: "Sarkel Fortress",
         },
         {
@@ -139,8 +219,16 @@ const civData = {
             CivBonus: ["Archers fire 15% faster",
                 "Receive +100 food and +100 gold whenever a new Age is reached",
                 "The Pikeman upgrade is free"],
-            CUT: "Royal Heirs (halves Shotel Warrior training time)",
-            IUT: "Torsion Engines (Siege Workshop units' blast radius increased)",
+            technology: {
+                castle: {
+                    name: "Royal Heirs",
+                    description: "Shotel Warrior trains twice as fast"
+                },
+                imperial: {
+                    name: "Torsion Engines",
+                    description: "Siege Workshop units' blast radius increased"
+                }
+            },
             Wonder: "Biete Amanuel",
         },
         {
@@ -153,8 +241,16 @@ const civData = {
                 "Castles are 25% cheaper",
                 "Cavalry have +20% HP",
                 "Foragers work 25% faster"],
-            CUT: "Chivalry (Stables work 40% faster)",
-            IUT: "Bearded Axe (Throwing Axeman +1 range)",
+            technology: {
+                castle: {
+                    name: "Chivalry",
+                    description: "Stables work 40% faster"
+                },
+                imperial: {
+                    name: "Bearded Axe",
+                    description: "Throwing Axeman +1 range"
+                }
+            },
             Wonder: "St. Vitus Cathedral",
         },
         {
@@ -168,8 +264,16 @@ const civData = {
                 "Villagers have +5 attack against Wild Boars and carry +15 food from hunting",
                 "+10 population cap in the Imperial Age",
                 "Loom is free"],
-            CUT: "Anarchy (Huskarls can be created at Barracks)",
-            IUT: "Perfusion (Barracks create units 100% faster)",
+            technology: {
+                castle: {
+                    name: "Anarchy",
+                    description: "Huskarls can be created at Barracks"
+                },
+                imperial: {
+                    name: "Perfusion",
+                    description: "Barracks create units 100% faster"
+                }
+            },
             Wonder: "Mausoleum of Theoderic I",
         },
         {
@@ -181,8 +285,16 @@ const civData = {
             CivBonus: ["Start the game with -100 wood, but with the population cap at the maximum",
                 "Cavalry Archers are 10%/20% cheaper in the Castle/Imperial Age",
                 "Trebuchets have +30% accuracy"],
-            CUT: "Marauders (create Tarkans at Stables)",
-            IUT: "Atheism (+100 years for Relic/Wonder victories, Spies/Treason cost -50%)",
+            technology: {
+                castle: {
+                    name: "Marauders",
+                    description: "Create Tarkans at Stables"
+                },
+                imperial: {
+                    name: "Atheism",
+                    description: "+100 years for Relic/Wonder victories, Spies/Treason cost -50%"
+                }
+            },
             Wonder: "Arch of Constantine (ruined)",
         },
         {
@@ -196,8 +308,16 @@ const civData = {
                 "Villagers benefit from Blacksmith infantry upgrades",
                 "Houses support 10 population",
                 "Buildings cost -15% stone"],
-            CUT: "Andean Sling (Slingers and Skirmisher have no minimum range)",
-            IUT: "Fabric Shields (Kamayuks, Slingers, and Eagle Warriors +1/+2",
+            technology: {
+                castle: {
+                    name: "Andean Sling",
+                    description: "Slingers and Skirmisher have no minimum range"
+                },
+                imperial: {
+                    name: "Fabric Shields",
+                    description: "Kamayuks, Slingers, and Eagle Warriors +1/+2"
+                }
+            },
             Wonder: "Temple of the Sun at Macchu Picchu",
         },
         {
@@ -209,8 +329,16 @@ const civData = {
             CivBonus: ["Fishermen work 10% faster",
                 "Villagers are 10%/15%/20%/25% cheaper in the Dark/Feudal/Castle/Imperial Age",
                 "Camel Riders have +1 pierce armor"],
-            CUT: "Sultans (All gold production +10% faster)",
-            IUT: "Shatagni (Hand Cannoneers +1 range)",
+            technology: {
+                castle: {
+                    name: "Sultans",
+                    description: "All gold production +10% faster"
+                },
+                imperial: {
+                    name: "Shatagni",
+                    description: "Hand Cannoneers +1 range"
+                }
+            },
             Wonder: "Brihadeeswarar Temple",
         },
         {
@@ -223,8 +351,16 @@ const civData = {
                 "Dock technologies are 50% cheaper",
                 "Fishing Ships are 20% cheaper",
                 "Gunpowder units are 20% cheaper"],
-            CUT: "Pavise (foot archers and Condottieri +1/+1 armor)",
-            IUT: "Silk Road (trade units cost -50%)",
+            technology: {
+                castle: {
+                    name: "Pavise",
+                    description: "Foot archers and Condottieri +1/+1 armor"
+                },
+                imperial: {
+                    name: "Silk Road",
+                    description: "Trade units cost -50%"
+                }
+            },
             Wonder: "Cathedral of St. Lawrence",
         },
         {
@@ -236,8 +372,16 @@ const civData = {
             CivBonus: ["Fishing Ships have double HP, +2 pierce armor, and work 5%/10%/15%/20% faster in the Dark/Feudal/Castle/Imperial Age",
                 "Mills, Lumber Camps and Mining Camps are 50% cheaper",
                 "Infantry attack 33% faster starting in the Feudal Age"],
-            CUT: "Yasama (towers fire extra arrows)",
-            IUT: "Kataparuto (Trebuchets fire and pack faster)",
+            technology: {
+                castle: {
+                    name: "Yasama",
+                    description: "Towers fire extra arrows"
+                },
+                imperial: {
+                    name: "Kataparuto",
+                    description: "Trebuchets fire and pack faster"
+                }
+            },
             Wonder: "Tōdai-ji",
         },
         {
@@ -251,8 +395,16 @@ const civData = {
                 "Khmer Villagers drop off food from farms (1 unit at a time) without needing a drop site",
                 "Villagers can garrison in Houses"],
 
-            CUT: "Tusk Swords (Battle Elephants +3 attack)",
-            IUT: "Double Crossbow (Ballista Elephants and Scorpions shoot two projectiles)",
+            technology: {
+                castle: {
+                    name: "Tusk Swords",
+                    description: "Battle Elephants +3 attack"
+                },
+                imperial: {
+                    name: "Double Crossbow",
+                    description: "Ballista Elephants and Scorpions shoot two projectiles"
+                }
+            },
             Wonder: "Angkor Wat",
         },
         {
@@ -267,8 +419,16 @@ const civData = {
                 "Towers (except Bombard Towers) have +1/+2 range in the Castle/Imperial Age",
                 "Fortifications are built 33% faster",
                 "Military units Cost -20% less wood (except siege weapons)"],
-            CUT: "Panokseon (Turtle Ships move 15% faster)",
-            IUT: "Shinkichon (+1 range for Mangonels)",
+            technology: {
+                castle: {
+                    name: "Panokseon",
+                    description: "Turtle Ships move 15% faster"
+                },
+                imperial: {
+                    name: "Shinkichon",
+                    description: "+1 range for Mangonels"
+                }
+            },
             Wonder: "Hwangnyong Temple",
         },
         {
@@ -280,8 +440,16 @@ const civData = {
             CivBonus: ["Start with +150 food",
                 "Spearmen and Skirmishers move 10% faster",
                 "Each garrisoned Relic gives +1 attack to Knights and Leitis (maximum +4)"],
-            CUT: "Hill Forts (Town Centers +3 range)",
-            IUT: "Tower Shields (Spearman and Skirmishers +2 pierce armor)",
+            technology: {
+                castle: {
+                    name: "Hill Forts",
+                    description: "Town Centers +3 range"
+                },
+                imperial: {
+                    name: "Tower Shields",
+                    description: "Spearman and Skirmishers +2 pierce armor"
+                }
+            },
             Wonder: "Trakai Island Castle",
         },
         {
@@ -293,8 +461,16 @@ const civData = {
             CivBonus: ["Forging, Iron Casting, and Blast Furnace are free",
                 "Scout Cavalry is 15% cheaper",
                 "Villagers kill wild animals in one strike"],
-            CUT: "Corvinian Army (Magyar Huszars cost no gold)",
-            IUT: "Recurve Bow (Cavalry Archers + 1 range and attack)",
+            technology: {
+                castle: {
+                    name: "Corvinian Army",
+                    description: "Magyar Huszars cost no gold"
+                },
+                imperial: {
+                    name: "Recurve Bow",
+                    description: "Cavalry Archers + 1 range and attack"
+                }
+            },
             Wonder: "Hunyad Castle",
         },
         {
@@ -307,8 +483,16 @@ const civData = {
                 "Fish Traps are 33% cheaper",
                 "Fish Traps provide unlimited food",
                 "Battle Elephants are 30% cheaper"],
-            CUT: "Thalassocracy (upgrades Docks to Harbors, which shoot arrows)",
-            IUT: "Forced Levy (Turns Militia gold cost to food cost)",
+            technology: {
+                castle: {
+                    name: "Thalassocracy",
+                    description: "Upgrades Docks to Harbors, which shoot arrows"
+                },
+                imperial: {
+                    name: "Forced Levy",
+                    description: "Turns Militia gold cost to food cost"
+                }
+            },
             Wonder: "Kalasan Temple",
         },
         {
@@ -320,8 +504,16 @@ const civData = {
             CivBonus: ["Buildings cost -15% wood (except Farms)",
                 "Barracks units have +1/+2/+3 pierce armor in the Feudal/Castle/Imperial Age",
                 "Gold Mining is free"],
-            CUT: "Tigui (Town Centers fire arrows even without garrison)",
-            IUT: "Farimba (Stable units +5 attack)",
+            technology: {
+                castle: {
+                    name: "Tigui",
+                    description: "Town Centers fire arrows even without garrison"
+                },
+                imperial: {
+                    name: "Farimba",
+                    description: "Stable units +5 attack"
+                }
+            },
             Wonder: "Great Mosque of Djenné",
         },
         {
@@ -334,8 +526,16 @@ const civData = {
                 "Start the game with +1 Villager, but with -50 food",
                 "Resources last 15% longer",
                 "Foot archers are 10%/20%/30% cheaper in the Feudal/Castle/Imperial Age"],
-            CUT: "Obsidian Arrows (Archers have +6 attack against buildings and stone defense)",
-            IUT: "El Dorado (+40 hit points for Eagle Warriors)",
+            technology: {
+                castle: {
+                    name: "Obsidian Arrows",
+                    description: "Archers have +6 attack against buildings and stone defense"
+                },
+                imperial: {
+                    name: "El Dorado",
+                    description: "+40 hit points for Eagle Warriors"
+                }
+            },
             Wonder: "Tikal Temple I",
         },
         {
@@ -347,8 +547,16 @@ const civData = {
             CivBonus: ["Cavalry archers fire 25% faster",
                 "Light Cavalry, Hussars, and Steppe Lancers have +30% HP",
                 "Hunters work +50% faster"],
-            CUT: "Nomads (Houses retain population when destroyed)",
-            IUT: "Drill (Siege Workshop units move +50% faster)",
+            technology: {
+                castle: {
+                    name: "Nomads",
+                    description: "Houses retain population when destroyed"
+                },
+                imperial: {
+                    name: "Drill",
+                    description: "Siege Workshop units move +50% faster"
+                }
+            },
             Wonder: "Great Tent of Genghis Khan",
         },
         {
@@ -359,8 +567,16 @@ const civData = {
             TeamBonus: "Knights have +2 attack against archers",
             CivBonus: ["Start game with +50 food and +50 wood",
                 "Town Centers and Docks have double HP and work 10%/15%/20% faster in the Feudal/Castle/Imperial Age"],
-            CUT: "Kamandaran (turns Archer gold cost into wood cost)",
-            IUT: "Mahouts (War Elephants move +30% faster)",
+            technology: {
+                castle: {
+                    name: "Kamandaran",
+                    description: "Archer gold cost becomes wood cost"
+                },
+                imperial: {
+                    name: "Mahouts",
+                    description: "War Elephants move +30% faster"
+                }
+            },
             Wonder: "Taq Kasra",
         },
         {
@@ -372,8 +588,16 @@ const civData = {
             CivBonus: ["All units cost -20% gold",
                 "All ships have +10% HP",
                 "The Feitoria becomes available for building in the Imperial Age"],
-            CUT: "Carrack (ships +1/+1 armor)",
-            IUT: "Arquebus (gunpowder units fire more accurately at moving targets)",
+            technology: {
+                castle: {
+                    name: "Carrack",
+                    description: "Ships +1/+1 armor"
+                },
+                imperial: {
+                    name: "Arquebus",
+                    description: "Gunpowder units fire more accurately at moving targets"
+                }
+            },
             Wonder: "Belém Tower",
         },
         {
@@ -387,8 +611,16 @@ const civData = {
                 "Transport Ships have double HP and +5 carry capacity",
                 "Galleys attack 20% faster",
                 "Archers (excluding Skirmishers) have +1/+2/+3 attack against standard buildings in the Feudal/Castle/Imperial Age"],
-            CUT: "Madrasah (33% of a Monk's gold cost are returned if the Monk gets killed)",
-            IUT: "Zealotry (Camel Riders and Mamelukes +30 hit points)",
+            technology: {
+                castle: {
+                    name: "Madrasah",
+                    description: "33% of a Monk's gold cost are returned if the Monk gets killed"
+                },
+                imperial: {
+                    name: "Zealotry",
+                    description: "Camel Riders and Mamelukes +30 hit points"
+                }
+            },
             Wonder: "Great Mosque of Samarra",
         },
         {
@@ -400,8 +632,16 @@ const civData = {
             CivBonus: ["Farmers work 10% faster",
                 "Tracking is free. Since the Definitve Edition, Supplies is free",
                 "Siege Workshop units are 15% cheaper"],
-            CUT: "Orthodoxy (+3/+3 armor for Monks)",
-            IUT: "Druzhina (infantry damage adjacent units)",
+            technology: {
+                castle: {
+                    name: "Orthodoxy",
+                    description: "+3/+3 armor for Monks"
+                },
+                imperial: {
+                    name: "Druzhina",
+                    description: "Infantry damage adjacent units"
+                }
+            },
             Wonder: "Kizhi Pogost",
         },
         {
@@ -414,8 +654,16 @@ const civData = {
                 "Blacksmith upgrades cost no gold",
                 "Cannon Galleons have better accuracy and faster cannonballs",
                 "Hand Cannoneers and Bombard Cannons fire 15% faster"],
-            CUT: "Inquisition (conversion rate improved)",
-            IUT: "Supremacy (increased attack, armor, and HP for Villagers)",
+            technology: {
+                castle: {
+                    name: "Inquisition",
+                    description: "Monk conversion rate improved"
+                },
+                imperial: {
+                    name: "Supremacy",
+                    description: "Increased attack, armor, and HP for Villagers"
+                }
+            },
             Wonder: "Torre del Oro",
         },
         {
@@ -428,8 +676,16 @@ const civData = {
                 "Units deal +25% damage when attacking from hills (stacks with the regular hill attack bonus)",
                 "Thumb Ring is free",
                 "Parthian Tactics is free"],
-            CUT: "Silk Armor (Scout Cavalry, Steppe Lancers and Cavalry Archers have +1 pierce armor)",
-            IUT: "Timurid Siegecraft (Trebuchets +2 range, enables Flaming Camels at the Castle)",
+            technology: {
+                castle: {
+                    name: "Silk Armor",
+                    description: "Scout Cavalry, Steppe Lancers and Cavalry Archers have +1 pierce armor"
+                },
+                imperial: {
+                    name: "Timurid Siegecraft",
+                    description: "Trebuchets +2 range, enables Flaming Camels at the Castle"
+                }
+            },
             Wonder: "Ulugh Beg Observatory",
         },
         {
@@ -444,8 +700,16 @@ const civData = {
                 "Farms are 40% cheaper",
                 "Town Centers can garrison +10 units",
                 "Barracks and Stable units receive +1 melee armor in the Castle Age and +1 in the Imperial Age"],
-            CUT: "Ironclad (siege weapons +4 armor)",
-            IUT: "Crenellations (Castles +3 range; garrisoned infantry fires arrows)",
+            technology: {
+                castle: {
+                    name: "Ironclad",
+                    description: "Siege weapons +4 armor"
+                },
+                imperial: {
+                    name: "Crenellations",
+                    description: "Castles +3 range; garrisoned infantry fires arrows"
+                }
+            },
             Wonder: "Maria Laach Abbey",
         },
         {
@@ -459,8 +723,16 @@ const civData = {
                 "Chemistry is free",
                 "Gold Miners work 20% faster",
                 "Light Cavalry and Hussar upgrades are free"],
-            CUT: "Sipahi (Cavalry Archers +20 hit points)",
-            IUT: "Artillery (+2 range for Bombard Towers, Bombard Cannons, Cannon Galleons)",
+            technology: {
+                castle: {
+                    name: "Sipahi",
+                    description: "Cavalry Archers +20 hit points"
+                },
+                imperial: {
+                    name: "Artillery",
+                    description: "+2 range for Bombard Towers, Bombard Cannons, Cannon Galleons"
+                }
+            },
             Wonder: "Selimiye Mosque",
         },
         {
@@ -473,8 +745,16 @@ const civData = {
                 "Economic upgrades cost no wood",
                 "Archery Range units have +20% HP",
                 "Conscription is free"],
-            CUT: "Chatras (Battle Elephants +50 hit points)",
-            IUT: "Paper Money (tributes 500 gold to each ally)",
+            technology: {
+                castle: {
+                    name: "Chatras",
+                    description: "Battle Elephants +50 hit points"
+                },
+                imperial: {
+                    name: "Paper Money",
+                    description: "Tributes 500 gold to each ally"
+                }
+            },
             Wonder: "Bút Tháp",
         },
         {
@@ -486,8 +766,16 @@ const civData = {
             CivBonus: ["Warships are 15%/15%/20% cheaper in the Feudal/Castle/Imperial Age",
                 "Infantry have +10%/+15%/+20% HP in the Feudal/Castle/Imperial Age",
                 "Wheelbarrow and Hand Cart are free"],
-            CUT: "Chieftains (infantry get attack bonus against cavalry)",
-            IUT: "Berserkergang (Berserks regenerate faster)",
+            technology: {
+                castle: {
+                    name: "Chieftains",
+                    description: "Infantry get attack bonus against cavalry"
+                },
+                imperial: {
+                    name: "Berserkergang",
+                    description: "Berserks regenerate faster"
+                }
+            },
             Wonder: "Borgund Stave Church",
         }
     ],
