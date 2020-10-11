@@ -194,7 +194,7 @@ const civData = {
             name: "Cumans",
             speciality: [2],
             UU: [8],
-            TeamBonus: "Palisade Walls have +50%",
+            TeamBonus: "Palisade Walls have +50% HP",
             CivBonus: ["Can build an additional Town Center in the Feudal Age",
                 "Siege Workshop and Battering Ram available in the Feudal Age",
                 "Cavalry moves 5%/10%/15% faster in the Feudal/Castle/Imperial Age"],
