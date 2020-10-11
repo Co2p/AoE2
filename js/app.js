@@ -9,13 +9,19 @@ function populateDropdown(element, items) {
     });
 }
 
-function updateInformation(id) {
-    const data = civData.Civs[id];
+function resetInfo() {
+    let g = document.getElementById("grid");
+    g.innerHTML = "";
+}
+
+function updateInformation(data) {
     let g = document.getElementById("grid");
     const classes = "list-group-item";
     const headerSize = "h5"
-    g.innerHTML = "";
-    g.appendChild(header(data.name, "h1"));
+
+    let civDiv = document.createElement("div");
+    civDiv.className = "civcontainer";
+    civDiv.appendChild(header(data.name, "h1"));
 
     let uu = document.createElement("li");
     let cut = document.createElement("li");
@@ -46,15 +52,17 @@ function updateInformation(id) {
     civbonus.appendChild(header("Civ Bonus", headerSize));
     civbonus.appendChild(listify(data.CivBonus));
 
-    speciality.appendChild(header("Speciality", headerSize));
-    speciality.appendChild(listify(data.Speciality, specialities.map(x => x.name)));
+    speciality.appendChild(header("speciality", headerSize));
+    speciality.appendChild(listify(data.speciality, civData.specialities.map(x => x.name)));
     
-    g.appendChild(speciality);
-    g.appendChild(uu);
-    g.appendChild(iut);
-    g.appendChild(cut);
-    g.appendChild(teambonus);
-    g.appendChild(civbonus);
+    civDiv.appendChild(speciality);
+    civDiv.appendChild(uu);
+    civDiv.appendChild(iut);
+    civDiv.appendChild(cut);
+    civDiv.appendChild(teambonus);
+    civDiv.appendChild(civbonus);
+
+    g.appendChild(civDiv);
 }
 
 /**
@@ -90,7 +98,11 @@ function civDropdown() {
     let civDropdown = document.getElementById("civ-dropdown");
     civDropdown.style = "";
     civDropdown.onchange = (event) => {
-        updateInformation(event.target.value)
+        resetInfo();
+        if (event.target.value !== "-1"){
+            const data = civData.Civs[Number(event.target.value)];
+            updateInformation(data);
+        }
     };
     populateDropdown(civDropdown, civData.Civs);
 }
@@ -99,12 +111,26 @@ function specDropdown() {
     let specialitiesDropdown = document.getElementById("specialities-dropdown");
     specialitiesDropdown.style = "";
     specialitiesDropdown.onchange = (event) => {
-        updateInformation(event.target.value)
+        resetInfo();
+        
+        civData.Civs.forEach(x => {
+            if (x.speciality.includes(Number(event.target.value)))
+            {
+                updateInformation(x);
+            }
+        })
     };
     
-    populateDropdown(specialitiesDropdown, specialities);
+    populateDropdown(specialitiesDropdown, civData.specialities);
+}
+let pickDropdown = document.getElementById("pick-dropdown");
+
+pickDropdown.onchange = (event) => {
+    let specialitiesDropdown = document.getElementById("specialities-dropdown");
+    let civDropdown = document.getElementById("civ-dropdown");
+    specialitiesDropdown.hidden = event.target.value !== "spec";
+    civDropdown.hidden = event.target.value !== "civ";
 }
 
+specDropdown();
 civDropdown();
-// specDropdown(); //not ready for primetime
-updateInformation(0)

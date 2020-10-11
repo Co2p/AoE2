@@ -1,9 +1,14 @@
 const civData = {
     Civs: [
         {
+            id: -1,
+            name: "(Select Civ)",
+            speciality: []
+        },
+        {
             id: 0,
             name: "Aztecs",
-            Speciality: [8, 9],
+            speciality: [8, 9],
             UU: [0],
             TeamBonus: "Relics generate 33% more gold",
             CivBonus: ["Start the game with an Eagle Scout",
@@ -11,14 +16,14 @@ const civData = {
                 "All military units are created 18% faster",
                 "Monks gain 5 HP for every researched Monastery technology",
                 "Start with +50 gold"],
-            CUT: "Atlatl - attack and range of Skirmishers +1",
-            IUT: "Garland Wars - increases infantry attack by +4",
+            CUT: "Atlatl (attack and range of Skirmishers +1)",
+            IUT: "Garland Wars (increases infantry attack by +4)",
             Wonder: "Great Pyramid of Tenochtitlan",
         },
         {
             id: 1,
             name: "Berbers",
-            Speciality: [2, 10],
+            speciality: [2, 10],
             UU: [3, 11],
             TeamBonus: "Genitours are available at the Archery Range",
             CivBonus: ["Villagers move +10% faster",
@@ -31,7 +36,7 @@ const civData = {
         {
             id: 2,
             name: "Britons",
-            Speciality: [6],
+            speciality: [6],
             UU: [1],
             TeamBonus: "Archery Ranges work 20% faster",
             CivBonus: ["Town Centers cost -50% wood starting in the Castle Age",
@@ -44,7 +49,7 @@ const civData = {
         {
             id: 3,
             name: "Bulgarians",
-            Speciality: [2, 8],
+            speciality: [2, 8],
             UU: [2],
             TeamBonus: "Blacksmiths work 50% faster",
             CivBonus: ["Militia line units are upgraded for free",
@@ -57,7 +62,7 @@ const civData = {
         {
             id: 4,
             name: "Burmese",
-            Speciality: [5, 9],
+            speciality: [5, 9],
             UU: [4],
             TeamBonus: "Relics are visible on the map from the game start",
             CivBonus: ["Lumber Camp technologies are free",
@@ -70,7 +75,7 @@ const civData = {
         {
             id: 5,
             name: "Byzantines",
-            Speciality: [4],
+            speciality: [4],
             UU: [5],
             TeamBonus: "Monks heal 50% faster",
             CivBonus: ["Buildings have +10%/+20%/+30%/+40% HP in the Dark/Feudal/Castle/Imperial Age",
@@ -85,7 +90,7 @@ const civData = {
         {
             id: 6,
             name: "Celts",
-            Speciality: [8, 11],
+            speciality: [8, 11],
             UU: [6],
             TeamBonus: "Siege Workshops work 20% faster",
             CivBonus: ["Infantry units move 15% faster",
@@ -99,7 +104,7 @@ const civData = {
         {
             id: 7,
             name: "Chinese",
-            Speciality: [0],
+            speciality: [0],
             UU: [7],
             TeamBonus: "Farms provide +45 food",
             CivBonus: ["Start game with three extra Villagers, but with -200 food and -50 wood",
@@ -113,7 +118,7 @@ const civData = {
         {
             id: 8,
             name: "Cumans",
-            Speciality: [2],
+            speciality: [2],
             UU: [8],
             TeamBonus: "Palisade Walls have +50%",
             CivBonus: ["Can build an additional Town Center in the Feudal Age",
@@ -126,7 +131,7 @@ const civData = {
         {
             id: 9,
             name: "Ethiopians",
-            Speciality: [0, 11],
+            speciality: [0, 11],
             UU: [9],
             TeamBonus: "Towers and Outposts have +3 Line of Sight",
             CivBonus: ["The Archer line fires 15% faster",
@@ -139,7 +144,7 @@ const civData = {
         {
             id: 10,
             name: "Franks",
-            Speciality: [2],
+            speciality: [2],
             UU: [10],
             TeamBonus: "Knights have +2 Line of Sight",
             CivBonus: ["Farm upgrades are free",
@@ -153,7 +158,7 @@ const civData = {
         {
             id: 11,
             name: "Goths",
-            Speciality: [8],
+            speciality: [8],
             UU: [12],
             TeamBonus: "Barracks work 20% faster",
             CivBonus: ["Infantry are 20%/25%/30%/35% cheaper in the Dark/Feudal/Castle/Imperial Age",
@@ -168,7 +173,7 @@ const civData = {
         {
             id: 12,
             name: "Huns",
-            Speciality: [2],
+            speciality: [2],
             UU: [13],
             TeamBonus: "Stables work 20% faster",
             CivBonus: ["Start the game with -100 wood, but with the population cap at the maximum",
@@ -181,7 +186,7 @@ const civData = {
         {
             id: 13,
             name: "Incas",
-            Speciality: [8],
+            speciality: [8],
             UU: [14, 15],
             TeamBonus: "Farms are built 100% faster",
             CivBonus: ["Start the game with an Eagle Scout",
@@ -196,7 +201,7 @@ const civData = {
         {
             id: 14,
             name: "Indians",
-            Speciality: [1, 7],
+            speciality: [1, 7],
             UU: [16, 17],
             TeamBonus: "Camels have +6 attack against buildings",
             CivBonus: ["Fishermen work 10% faster",
@@ -209,7 +214,7 @@ const civData = {
         {
             id: 15,
             name: "Italians",
-            Speciality: [0, 10],
+            speciality: [0, 10],
             UU: [18, 19],
             TeamBonus: "Condottieri are available at the Barracks in Imp",
             CivBonus: ["Advancing to the next Age is 15% cheaper",
@@ -223,7 +228,7 @@ const civData = {
         {
             id: 16,
             name: "Japanese",
-            Speciality: [8],
+            speciality: [8],
             UU: [20],
             TeamBonus: "Galleys have +50% Line of Sight",
             CivBonus: ["Fishing Ships have double HP, +2 pierce armor, and work 5%/10%/15%/20% faster in the Dark/Feudal/Castle/Imperial Age",
@@ -236,7 +241,7 @@ const civData = {
         {
             id: 17,
             name: "Khmer",
-            Speciality: [5, 11],
+            speciality: [5, 11],
             UU: [21],
             TeamBonus: "Scorpions have +1 range",
             CivBonus: ["No buildings are required to construct certain buildings or advance in Age",
@@ -251,7 +256,7 @@ const civData = {
         {
             id: 18,
             name: "Koreans",
-            Speciality: [10, 12],
+            speciality: [10, 12],
             UU: [22, 23],
             TeamBonus: "Mangonel line minimum range reduced to 1",
             CivBonus: ["Villagers have +3 Line of Sight",
@@ -267,7 +272,7 @@ const civData = {
         {
             id: 19,
             name: "Lithuanians",
-            Speciality: [2, 9],
+            speciality: [2, 9],
             UU: [24],
             TeamBonus: "Monasteries work 20% faster",
             CivBonus: ["Start with +150 food",
@@ -280,7 +285,7 @@ const civData = {
         {
             id: 20,
             name: "Magyars",
-            Speciality: [2],
+            speciality: [2],
             UU: [25],
             TeamBonus: "All foot archers have +2 Line of Sight",
             CivBonus: ["Forging, Iron Casting, and Blast Furnace are free",
@@ -293,7 +298,7 @@ const civData = {
         {
             id: 21,
             name: "Malay",
-            Speciality: [10],
+            speciality: [10],
             UU: [26],
             TeamBonus: "Docks and Harbors have +100% Line of Sight",
             CivBonus: ["Advancing in Age is +80% faster",
@@ -307,7 +312,7 @@ const civData = {
         {
             id: 22,
             name: "Malians",
-            Speciality: [8],
+            speciality: [8],
             UU: [27],
             TeamBonus: "University researches 80% faster",
             CivBonus: ["Buildings cost -15% wood (except Farms)",
@@ -320,7 +325,7 @@ const civData = {
         {
             id: 23,
             name: "Mayans",
-            Speciality: [0],
+            speciality: [0],
             UU: [28],
             TeamBonus: "Walls and Gates are 50% cheaper",
             CivBonus: ["Start the game with an Eagle Scout",
@@ -334,7 +339,7 @@ const civData = {
         {
             id: 24,
             name: "Mongols",
-            Speciality: [3],
+            speciality: [3],
             UU: [29],
             TeamBonus: "Scout Cavalry +2 Line of Sight",
             CivBonus: ["Cavalry archers fire 25% faster",
@@ -347,7 +352,7 @@ const civData = {
         {
             id: 25,
             name: "Persians",
-            Speciality: [2],
+            speciality: [2],
             UU: [30],
             TeamBonus: "Knights have +2 attack against archers",
             CivBonus: ["Start game with +50 food and +50 wood",
@@ -359,7 +364,7 @@ const civData = {
         {
             id: 26,
             name: "Portuguese",
-            Speciality: [7, 10],
+            speciality: [7, 10],
             UU: [31, 32],
             TeamBonus: "Free Cartography from Dark Age",
             CivBonus: ["All units cost -20% gold",
@@ -372,7 +377,7 @@ const civData = {
         {
             id: 27,
             name: "Saracens",
-            Speciality: [2, 10],
+            speciality: [2, 10],
             UU: [33],
             TeamBonus: "All foot archers have +2 attack against standard buildings",
             CivBonus: ["The commodity trading fee is 5%",
@@ -387,7 +392,7 @@ const civData = {
         {
             id: 28,
             name: "Slavs",
-            Speciality: [8, 11],
+            speciality: [8, 11],
             UU: [34],
             TeamBonus: "Military production buildings (except Castles and Kreposts) provide +5 pop",
             CivBonus: ["Farmers work 10% faster",
@@ -400,7 +405,7 @@ const civData = {
         {
             id: 29,
             name: "Spanish",
-            Speciality: [7, 9],
+            speciality: [7, 9],
             UU: [35, 36],
             TeamBonus: "Trade Carts and Trade Cogs return 25% more gold",
             CivBonus: ["Builders work 30% faster",
@@ -414,7 +419,7 @@ const civData = {
         {
             id: 30,
             name: "Tatars",
-            Speciality: [0, 2],
+            speciality: [0, 2],
             UU: [37, 38],
             TeamBonus: "Cavalry Archers have +2 Line of Sight",
             CivBonus: ["Herdables contain +50% food",
@@ -428,7 +433,7 @@ const civData = {
         {
             id: 31,
             name: "Teutons",
-            Speciality: [8],
+            speciality: [8],
             UU: [39],
             TeamBonus: "Units resist conversion",
             CivBonus: ["Monks have double healing range",
@@ -444,7 +449,7 @@ const civData = {
         {
             id: 32,
             name: "Turks",
-            Speciality: [7],
+            speciality: [7],
             UU: [40],
             TeamBonus: "Gunpowder units are created 25% faster",
             CivBonus: ["Gunpowder units have +25% HP",
@@ -459,7 +464,7 @@ const civData = {
         {
             id: 33,
             name: "Vietnamese",
-            Speciality: [0],
+            speciality: [0],
             UU: [41, 42],
             TeamBonus: "Imperial Skirmishers",
             CivBonus: ["Reveal enemy positions at game start",
@@ -473,7 +478,7 @@ const civData = {
         {
             id: 34,
             name: "Vikings",
-            Speciality: [8, 10],
+            speciality: [8, 10],
             UU: [43, 44],
             TeamBonus: "Docks are 15% cheaper",
             CivBonus: ["Warships are 15%/15%/20% cheaper in the Feudal/Castle/Imperial Age",
@@ -483,62 +488,62 @@ const civData = {
             IUT: "Berserkergang (Berserks regenerate faster)",
             Wonder: "Borgund Stave Church",
         }
+    ],
+    specialities: [
+        {
+            name: "Archers",
+            id: 0
+        },
+        {
+            name: "Camel Riders",
+            id: 1
+        },
+        {
+            name: "Cavalry",
+            id: 2
+        },
+        {
+            name: "Cavalry archers",
+            id: 3
+        },
+        {
+            name: "Defense",
+            id: 4
+        },
+        {
+            name: "Elephants",
+            id: 5
+        },
+        {
+            name: "Foot archers",
+            id: 6
+        },
+        {
+            name: "Gunpowder units",
+            id: 7
+        },
+        {
+            name: "Infantry",
+            id: 8
+        },
+        {
+            name: "Monk",
+            id: 9
+        },
+        {
+            name: "Navy",
+            id: 10
+        },
+        {
+            name: "Siege weapons",
+            id: 11
+        },
+        {
+            name: "Towers",
+            id: 12
+        }
     ]
 };
-const specialities = [
-    {
-        name: "Archers",
-        id: 0
-    },
-    {
-        name: "Camel Riders",
-        id: 1
-    },
-    {
-        name: "Cavalry",
-        id: 2
-    },
-    {
-        name: "Cavalry archers",
-        id: 3
-    },
-    {
-        name: "Defense",
-        id: 4
-    },
-    {
-        name: "Elephants",
-        id: 5
-    },
-    {
-        name: "Foot archers",
-        id: 6
-    },
-    {
-        name: "Gunpowder units",
-        id: 7
-    },
-    {
-        name: "Infantry",
-        id: 8
-    },
-    {
-        name: "Monk",
-        id: 9
-    },
-    {
-        name: "Navy",
-        id: 10
-    },
-    {
-        name: "Siege weapons",
-        id: 11
-    },
-    {
-        name: "Towers",
-        id: 12
-    }
-]
 
 const uniqueUnits = [
     "Jaguar Warior",//0

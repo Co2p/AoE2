@@ -7,20 +7,25 @@
     <title>AoE Civ Cheatsheet</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
     <nav class="navbar sticky-top navbar-light bg-light">
-        <form>
-            <select style="display: none;" class="form-control" id="civ-dropdown" href="#">
-            </select>
-            <select style="display: none;" class="form-control" id="specialities-dropdown" href="#">
-            </select>
-        </form>
+        <select class="form-control" id="pick-dropdown" href="#">
+            <option value="civ">Civilization</option>
+            <option value="spec">Specialities</option>
+        </select>
+        <select class="form-control" id="civ-dropdown" href="#">
+        </select>
+        <select hidden class="form-control" id="specialities-dropdown" href="#">
+        </select>
     </nav>
     <br/>
     <div class="container">
-        <ol id="grid" class="list-group"></ol>
+        <ol id="grid" class="list-group">
+            <li class="list-group-item"><h1>Select something above</h1></li>
+        </ol>
     </div>
     <br/>
     <script src="./js/civs.js"></script>
