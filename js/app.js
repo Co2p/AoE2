@@ -68,8 +68,8 @@ function createStatElement(header, body) {
 
 /**
  * Make a html list node from a array
- * @param {Array} array Array of indexes for dataArray (if dataArray is provided), otherwise array of data to make a list of
- * @param {Array} dataArray Array of data to fetch from, if not provided array will be used as dataArray too.
+ * @param {number[]} array Array of indexes for dataArray (if dataArray is provided), otherwise array of data to make a list of
+ * @param {string[]} dataArray Array of data to fetch from, if not provided array will be used as dataArray too.
  * @returns {HTMLUListElement} A HTML list of items
  */
 function listify(array, dataArray) {
