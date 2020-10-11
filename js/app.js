@@ -1,3 +1,14 @@
+/**
+ * @typedef Object DropdownItem
+ * @property {string} name Visible name in the dropdown
+ * @property {number} id Identifier of the dropdown item
+ */
+
+/**
+ * 
+ * @param {HTMLElement} element Element to append options into
+ * @param {DropdownItem[]} items Array of items to use when creating the dropdown, elements have attributes "id" and "name"
+ */
 function populateDropdown(element, items) {
     items.forEach(item => {
         let option = document.createElement("option");
@@ -81,9 +92,22 @@ function header(text, size) {
     return header;
 }
 
+/**
+ * Sorted accoring to name, sorts item with id -1 to be at the top
+ * id -1 should be the "no selection"-item
+ * @param {DropdownItem[]} ddlItems Dropdown items
+ */
+function dropdownSort(ddlItems) {
+    return ddlItems.sort((a,b) => {
+        if (a.id === -1) {
+            return -1;
+        }
+        return a.name < b.name ? -1 : 1
+    });
+}
+
 function civDropdown() {
     let civDropdown = document.getElementById("civ-dropdown");
-    civDropdown.style = "";
     civDropdown.onchange = (event) => {
         resetInfo();
         if (event.target.value !== "-1") {
@@ -91,12 +115,33 @@ function civDropdown() {
             updateInformation(data[0]);
         }
     };
-    populateDropdown(civDropdown, civData.Civs);
+    populateDropdown(civDropdown, dropdownSort(civData.Civs));
+}
+
+function techDropdown() {
+    let techDropdown = document.getElementById("tech-dropdown");
+    techDropdown.onchange = (event) => {
+        resetInfo();
+        if (event.target.value !== "-1") {
+            const data = civData.Civs.filter(x => { return x.id === Number(event.target.value) });
+            updateInformation(data[0]);
+        }
+    };
+    let ddlItems = civData.Civs.map(x => {
+        let r1 = {};
+        let r2 = {};
+        r1.name = x.CUT;
+        r2.name = x.IUT;
+        r1.id = x.id;
+        r2.id = x.id;
+        return r1, r2;
+    });
+
+    populateDropdown(techDropdown, dropdownSort(ddlItems));
 }
 
 function specDropdown() {
     let specialitiesDropdown = document.getElementById("specialities-dropdown");
-    specialitiesDropdown.style = "";
     specialitiesDropdown.onchange = (event) => {
         resetInfo();
         if (event.target.value !== "-1") {
@@ -107,7 +152,6 @@ function specDropdown() {
             });
         }
     };
-
     populateDropdown(specialitiesDropdown, civData.specialities);
 }
 let pickDropdown = document.getElementById("pick-dropdown");
@@ -115,12 +159,15 @@ let pickDropdown = document.getElementById("pick-dropdown");
 pickDropdown.onchange = (event) => {
     let specialitiesDropdown = document.getElementById("specialities-dropdown");
     let civDropdown = document.getElementById("civ-dropdown");
+    let techDropdown = document.getElementById("tech-dropdown");
     specialitiesDropdown.hidden = event.target.value !== "spec";
+    techDropdown.hidden = event.target.value !== "tech";
     civDropdown.hidden = event.target.value !== "civ";
     specialitiesDropdown.value = -1;
     civDropdown.value = -1;
-
+    techDropdown.value = -1
 }
 
 specDropdown();
 civDropdown();
+techDropdown();
