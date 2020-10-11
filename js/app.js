@@ -100,8 +100,8 @@ function civDropdown() {
     civDropdown.onchange = (event) => {
         resetInfo();
         if (event.target.value !== "-1"){
-            const data = civData.Civs[Number(event.target.value)];
-            updateInformation(data);
+            const data = civData.Civs.filter(x => {return x.id ===Number(event.target.value)});
+            updateInformation(data[0]);
         }
     };
     populateDropdown(civDropdown, civData.Civs);
