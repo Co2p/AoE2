@@ -38,7 +38,7 @@ function updateInformation(data) {
     speciality.className = classes;
 
     uu.appendChild(header("Unique Unit", headerSize));
-    uu.appendChild(listify(data.UU, civData.uniqueUnits));
+    uu.appendChild(listify(data.UU, civData.uniqueUnits.map(x => x.name)));
 
     iut.appendChild(header("Unique Tech", headerSize));
     iut.appendChild(document.createTextNode(data.IUT));

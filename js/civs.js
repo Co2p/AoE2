@@ -548,50 +548,185 @@ const civData = {
         }
     ],
     uniqueUnits: [
-        "Jaguar Warior",//0
-        "Longbowman",//1
-        "Konnik",//2
-        "Camel Archer",//3
-        "Arambai",//4
-        "Cataphract",//5
-        "Woad Raider",//6
-        "Chu Ko Nu",//7
-        "Kipchak",//8
-        "Shotel Warrior",//9
-        "Throwing Axeman",//10
-        "Genitour",//11
-        "Huskarl",//12
-        "Tarkan",//13
-        "Kamayuk",//14
-        "Slinger",//15
-        "Elephant Archer",//16
-        "Imperial Camel Rider",//17
-        "Genoese Crossbowman",//18
-        "Condottiero",//19
-        "Samurai",//20
-        "Ballista Elephant", //21
-        "War Wagon",//22
-        "Turtle Ship",//23
-        "Leitis",//24
-        "Magyar Huszar",//25
-        "Karambit Warrior",//26
-        "Gbeto",//27
-        "Plumed Archer",//28
-        "Mangudai",//29
-        "War Elephant",//30
-        "Organ Gun",//31
-        "Caravel",//32
-        "Mameluke",//33
-        "Boyar",//34
-        "Conquistador",//35
-        "Missionary",//36
-        "Keshik",//37
-        "Flaming Camel",//38
-        "Teutonic Knight",//39
-        "Janissary",//40
-        "Rattan Archer",//41
-        "Imperial Skirmisher",//42
-        "Berserk",//43
-        "Longboat",//44
+        {
+            name: "Jaguar Warior",//0
+            id: 0
+        },
+        {
+            name: "Longbowman",//1
+            id: 1
+        },
+        {
+            name: "Konnik",//2
+            id: 2
+        },
+        {
+            name: "Camel Archer",//3
+            id: 3
+        },
+        {
+            name: "Arambai",//4
+            id: 4
+        },
+        {
+            name: "Cataphract",//5
+            id: 5
+        },
+        {
+            name: "Woad Raider",//6
+            id: 6
+        },
+        {
+            name: "Chu Ko Nu",//7
+            id: 7
+        },
+        {
+            name: "Kipchak",//8
+            id: 8
+        },
+        {
+            name: "Shotel Warrior",//9
+            id: 9
+        },
+        {
+            name: "Throwing Axeman",//10
+            id: 10
+        },
+        {
+            name: "Genitour",//11
+            id: 11
+        },
+        {
+            name: "Huskarl",//12
+            id: 12
+        },
+        {
+            name: "Tarkan",//13
+            id: 13
+        },
+        {
+            name: "Kamayuk",//14
+            id: 14
+        },
+        {
+            name: "Slinger",//15
+            id: 15
+        },
+        {
+            name: "Elephant Archer",//16
+            id: 16
+        },
+        {
+            name: "Imperial Camel Rider",//17
+            id: 17
+        },
+        {
+            name: "Genoese Crossbowman",//18
+            id: 18
+        },
+        {
+            name: "Condottiero",//19
+            id: 19
+        },
+        {
+            name: "Samurai",//20
+            id: 20
+        },
+        {
+            name: "Ballista Elephant", //21
+            id: 21
+        },
+        {
+            name: "War Wagon",//22
+            id: 22
+        },
+        {
+            name: "Turtle Ship",//23
+            id: 23
+        },
+        {
+            name: "Leitis",//24
+            id: 24
+        },
+        {
+            name: "Magyar Huszar",//25
+            id: 25
+        },
+        {
+            name: "Karambit Warrior",//26
+            id: 26
+        },
+        {
+            name: "Gbeto",//27
+            id: 27
+        },
+        {
+            name: "Plumed Archer",//28
+            id: 28
+        },
+        {
+            name: "Mangudai",//29
+            id: 29
+        },
+        {
+            name: "War Elephant",//30
+            id: 30
+        },
+        {
+            name: "Organ Gun",//31
+            id: 31
+        },
+        {
+            name: "Caravel",//32
+            id: 32
+        },
+        {
+            name: "Mameluke",//33
+            id: 33
+        },
+        {
+            name: "Boyar",//34
+            id: 34
+        },
+        {
+            name: "Conquistador",//35
+            id: 35
+        },
+        {
+            name: "Missionary",//36
+            id: 36
+        },
+        {
+            name: "Keshik",//37
+            id: 37
+        },
+        {
+            name: "Flaming Camel",//38
+            id: 38
+        },
+        {
+            name: "Teutonic Knight",//39
+            id: 39
+        },
+        {
+            name: "Janissary",//40
+            id: 40
+        },
+        {
+            name: "Rattan Archer",//41
+            id: 41
+        },
+        {
+            name: "Imperial Skirmisher",//42
+            id: 42
+        },
+        {
+            name: "Berserk",//43
+            id: 43
+        },
+        {
+            name: "Longboat",//44
+            id: 44
+        }
     ]
 };
