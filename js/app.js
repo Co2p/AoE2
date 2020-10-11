@@ -16,45 +16,19 @@ function resetInfo() {
 
 function updateInformation(data) {
     let g = document.getElementById("grid");
-    const classes = "list-group-item";
     const headerSize = "h5"
 
     let civDiv = document.createElement("div");
     civDiv.className = "civcontainer";
     civDiv.appendChild(header(data.name, "h1"));
 
-    let uu = document.createElement("li");
-    let cut = document.createElement("li");
-    let iut = document.createElement("li");
-    let teambonus = document.createElement("li");
-    let civbonus = document.createElement("li");
-    let speciality = document.createElement("li");
-    
-    uu.className = classes;
-    cut.className = classes;
-    iut.className = classes;
-    teambonus.className = classes;
-    civbonus.className = classes;
-    speciality.className = classes;
+    const uu = createStatElement(header("Unique Unit", headerSize), listify(data.UU, civData.uniqueUnits.map(x => x.name)));
+    const iut = createStatElement(header("Unique Tech", headerSize), document.createTextNode(data.IUT));
+    const cut = createStatElement(header("Civ Unique Tech", headerSize), document.createTextNode(data.CUT));
+    const teambonus = createStatElement(header("Team Bonus", headerSize), document.createTextNode(data.TeamBonus));
+    const civbonus = createStatElement(header("Civ Bonus", headerSize), listify(data.CivBonus));
+    const speciality = createStatElement(header("Speciality", headerSize), listify(data.speciality, civData.specialities.slice(1, civData.length).map(x => x.name)));
 
-    uu.appendChild(header("Unique Unit", headerSize));
-    uu.appendChild(listify(data.UU, civData.uniqueUnits.map(x => x.name)));
-
-    iut.appendChild(header("Unique Tech", headerSize));
-    iut.appendChild(document.createTextNode(data.IUT));
-    
-    cut.appendChild(header("Civ Unique Tech", headerSize));
-    cut.appendChild(document.createTextNode(data.CUT));
-    
-    teambonus.appendChild(header("Team Bonus", headerSize));
-    teambonus.appendChild(document.createTextNode(data.TeamBonus));
-    
-    civbonus.appendChild(header("Civ Bonus", headerSize));
-    civbonus.appendChild(listify(data.CivBonus));
-
-    speciality.appendChild(header("Speciality", headerSize));
-    speciality.appendChild(listify(data.speciality, civData.specialities.slice(1,civData.length).map(x => x.name)));
-    
     civDiv.appendChild(speciality);
     civDiv.appendChild(uu);
     civDiv.appendChild(iut);
@@ -63,6 +37,19 @@ function updateInformation(data) {
     civDiv.appendChild(civbonus);
 
     g.appendChild(civDiv);
+}
+
+/**
+ * Creates a div for information regarding one stat of a civ
+ * @param {HTMLElement} header Header element
+ * @param {HTMLElement} body Body element
+ */
+function createStatElement(header, body) {
+    let e = document.createElement("li");
+    e.className = "list-group-item";
+    e.appendChild(header);
+    e.appendChild(body);
+    return e;
 }
 
 /**
@@ -75,7 +62,7 @@ function listify(array, dataArray) {
     let list = document.createElement("ul");
     const all = (typeof dataArray === "undefined");
     array.forEach((i) => {
-        let element = document.createElement("li", );
+        let element = document.createElement("li",);
         element.innerText = all ? i : dataArray[i];
         list.appendChild(element);
     });
@@ -99,8 +86,8 @@ function civDropdown() {
     civDropdown.style = "";
     civDropdown.onchange = (event) => {
         resetInfo();
-        if (event.target.value !== "-1"){
-            const data = civData.Civs.filter(x => {return x.id ===Number(event.target.value)});
+        if (event.target.value !== "-1") {
+            const data = civData.Civs.filter(x => { return x.id === Number(event.target.value) });
             updateInformation(data[0]);
         }
     };
@@ -112,16 +99,15 @@ function specDropdown() {
     specialitiesDropdown.style = "";
     specialitiesDropdown.onchange = (event) => {
         resetInfo();
-        if (event.target.value !== "-1"){
+        if (event.target.value !== "-1") {
             civData.Civs.forEach(x => {
-                if (x.speciality.includes(Number(event.target.value)))
-                {
+                if (x.speciality.includes(Number(event.target.value))) {
                     updateInformation(x);
                 }
             });
         }
     };
-    
+
     populateDropdown(specialitiesDropdown, civData.specialities);
 }
 let pickDropdown = document.getElementById("pick-dropdown");
@@ -131,6 +117,9 @@ pickDropdown.onchange = (event) => {
     let civDropdown = document.getElementById("civ-dropdown");
     specialitiesDropdown.hidden = event.target.value !== "spec";
     civDropdown.hidden = event.target.value !== "civ";
+    specialitiesDropdown.value = -1;
+    civDropdown.value = -1;
+
 }
 
 specDropdown();
