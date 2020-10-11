@@ -33,15 +33,15 @@ function updateInformation(data) {
     civDiv.className = "civcontainer";
     civDiv.appendChild(header(data.name, "h1"));
 
-    const uu = createStatElement(header("Unique Unit", headerSize), listify(data.UU, civData.uniqueUnits.map(x => x.name)));
+    const uu = createStatElement(header("Unique Units", headerSize), listify(data.UU, civData.uniqueUnits.map(x => x.name)));
 
-    const cut = createStatElement(header(`Castle Unique Tech: ${data.technology.castle.name}`, headerSize), document.createTextNode(data.technology.castle.description));
+    const cut = createStatElement(header(`Castle Unique Technologies: ${data.technology.castle.name}`, headerSize), document.createTextNode(data.technology.castle.description));
 
-    const iut = createStatElement(header(`Imperial Unique Tech: ${data.technology.imperial.name}`, headerSize), document.createTextNode(data.technology.imperial.description));
+    const iut = createStatElement(header(`Imperial Unique Technologies: ${data.technology.imperial.name}`, headerSize), document.createTextNode(data.technology.imperial.description));
 
-    const teambonus = createStatElement(header("Team Bonus", headerSize), document.createTextNode(data.TeamBonus));
-    const civbonus = createStatElement(header("Civ Bonus", headerSize), listify(data.CivBonus));
-    const speciality = createStatElement(header("Speciality", headerSize), listify(data.speciality, civData.specialities.slice(1, civData.length).map(x => x.name)));
+    const teambonus = createStatElement(header("Team bonus", headerSize), document.createTextNode(data.TeamBonus));
+    const civbonus = createStatElement(header("Civilization bonuses", headerSize), listify(data.CivBonus));
+    const speciality = createStatElement(header("Specialty", headerSize), listify(data.speciality, civData.specialities.slice(1, civData.length).map(x => x.name)));
 
     civDiv.appendChild(speciality);
     civDiv.appendChild(uu);
