@@ -1,0 +1,60 @@
+{
+    "specialities": [
+        {
+            "name": "(Select speciality)",
+            "id": -1
+        },
+        {
+            "name": "Archers",
+            "id": 0
+        },
+        {
+            "name": "Camel Riders",
+            "id": 1
+        },
+        {
+            "name": "Cavalry",
+            "id": 2
+        },
+        {
+            "name": "Cavalry archers",
+            "id": 3
+        },
+        {
+            "name": "Defense",
+            "id": 4
+        },
+        {
+            "name": "Elephants",
+            "id": 5
+        },
+        {
+            "name": "Foot archers",
+            "id": 6
+        },
+        {
+            "name": "Gunpowder units",
+            "id": 7
+        },
+        {
+            "name": "Infantry",
+            "id": 8
+        },
+        {
+            "name": "Monks",
+            "id": 9
+        },
+        {
+            "name": "Navy",
+            "id": 10
+        },
+        {
+            "name": "Siege weapons",
+            "id": 11
+        },
+        {
+            "name": "Towers",
+            "id": 12
+        }
+    ]
+}
