@@ -14,7 +14,7 @@ export default {
   plugins: [
     json({ compact: true }),
     scss({
-      output: "./build/css/style.css",
+      output: "./build/css/main.min.css",
       failOnError: true,
       runtime: require("sass"),
       outputStyle: "compressed",
