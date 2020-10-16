@@ -1,0 +1,58 @@
+// colors
+$primary: #000;
+$secondary: #232323;
+$grey: #999999;
+$white: #fff;
+$black: #000;
+
+.bg-primary {
+    background-color: $primary;
+    color: $white;
+}
+
+.bg-secondary {
+    background-color: $secondary;
+    color: $white;
+}
+
+.bg-grey {
+    background-color: $grey;
+    color: $black;
+}
+
+.bg-white {
+    background-color: $white;
+    color: $black;
+}
+
+.bg-black {
+    background-color: $black;
+    color: $white;
+}
+
+// Layout
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    @extend .bg-grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.navbar select {
+    margin: 0.1rem;
+}
+
+.list-group-item {
+    list-style: none;
+}
+
+.civcontainer {
+    /* min-width: fit-content; */
+}

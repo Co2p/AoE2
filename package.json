@@ -1,0 +1,14 @@
+{
+    "name": "aoe2-cheat-sheet",
+    "description": "A small web app to help choose a civilization in Age of Empires 2",
+    "authors": "Co2p",
+    "version": "1.0.0",
+    "main": "",
+    "dependencies": {},
+    "devDependencies": {
+        "@rollup/plugin-json": "^4.1.0",
+        "rollup-plugin-scss": "^2.6.1",
+        "rollup-plugin-terser": "^7.0.2",
+        "sass": "^1.27.0"
+    }
+}
