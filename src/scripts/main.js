@@ -1,5 +1,5 @@
 import '../styling/layout.scss';
-import { civs, specialities, uniqueUnits } from './civs.json';
+import { civs, specialities, uniqueUnits } from '../data/civs.json';
 
 /** 
  * @typedef Object DropdownItem
