@@ -51,19 +51,19 @@ function createCivInfoHTML(civData) {
     const civilizationBonusHeader = header("Civilization bonuses", headerSize);
     const specialityHeader = header("Specialty", headerSize);
 
+    const specialityList =  createUnorderedListFromArray(getDataFromArrayForIds(civData.speciality, specialities).map(x => x.name));
     const uniqueUnitList = createUnorderedListFromArray(getDataFromArrayForIds(civData.UU, uniqueUnits).map(uniqueUnit => uniqueUnit.name));
     const castleUniqueTech =  document.createTextNode(civData.technology.castle.description);
     const imperialUniqueTech = document.createTextNode(civData.technology.imperial.description);
     const teamBonus = document.createTextNode(civData.TeamBonus);
     const civilizationBonusList =  createUnorderedListFromArray(civData.CivBonus);
-    const specialityList =  createUnorderedListFromArray(getDataFromArrayForIds(civData.speciality, specialities).map(x => x.name));
 
+    civInfoStruct.push([specialityHeader, specialityList]);
     civInfoStruct.push([uniqueUnitHeader, uniqueUnitList]);
     civInfoStruct.push([castleUniqueTechHeader, castleUniqueTech]);
     civInfoStruct.push([imperialUniqueTechHeader, imperialUniqueTech]);
     civInfoStruct.push([teamBonusHeader, teamBonus]);
     civInfoStruct.push([civilizationBonusHeader, civilizationBonusList]);
-    civInfoStruct.push([specialityHeader, specialityList]);
 
     civInfoStruct.forEach((info) => {
         civDiv.appendChild(createDivOfAllElementsInArray(info, "list-group-item"));

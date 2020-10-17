@@ -7,11 +7,21 @@
             "technology": {
                 "castle": {
                     "name": "(Select technology)",
-                    "description": ""
+                    "description": "",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "(Select technology)",
-                    "description": ""
+                    "description": "",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             }
         },
@@ -29,11 +39,21 @@
             "technology": {
                 "castle": {
                     "name": "Atlatl",
-                    "description": "Attack and range of Skirmishers +1"
+                    "description": "Attack and range of Skirmishers +1",
+                    "gold_cost": 350,
+                    "food_cost": 400,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Garland Wars",
-                    "description": "Infantry attack +4"
+                    "description": "Infantry attack +4",
+                    "gold_cost": 750,
+                    "food_cost": 450,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 60
                 }
             },
             "Wonder": "Great Pyramid of Tenochtitlan"
@@ -50,11 +70,21 @@
             "technology": {
                 "castle": {
                     "name": "Kasbah",
-                    "description": "Team Castles work +25% faster"
+                    "description": "Team Castles work +25% faster",
+                    "gold_cost": 250,
+                    "food_cost": 250,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Maghrabi Camels",
-                    "description": "Camel troops regenerate"
+                    "description": "Camel troops regenerate",
+                    "gold_cost": 300,
+                    "food_cost": 700,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 40
                 }
             },
             "Wonder": "Hassan Tower"
@@ -71,11 +101,21 @@
             "technology": {
                 "castle": {
                     "name": "Yeomen",
-                    "description": "Foot archers +1 range and towers +2 attack"
+                    "description": "Foot archers +1 range and towers +2 attack",
+                    "gold_cost": 450,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 750,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Warwolf",
-                    "description": "Trebuchets blast damage and 100% accuracy against units"
+                    "description": "Trebuchets blast damage and 100% accuracy against units",
+                    "gold_cost": 400,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 800,
+                    "research_time": 0
                 }
             },
             "Wonder": "Chichester Cathedral"
@@ -92,11 +132,21 @@
             "technology": {
                 "castle": {
                     "name": "Stirrups",
-                    "description": "Light Cavalry, Knight and Konniks attack 33% faster"
+                    "description": "Light Cavalry, Knight and Konniks attack 33% faster",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Bagains",
-                    "description": "Militia +5 melee armor"
+                    "description": "Militia +5 melee armor",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Preslav Round Church"
@@ -113,11 +163,21 @@
             "technology": {
                 "castle": {
                     "name": "Howdah",
-                    "description": "Battle Elephants +1/+1 armor"
+                    "description": "Battle Elephants +1/+1 armor",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Manipur Cavalry",
-                    "description": "Cavalry and Arambai +3 attack against buildings"
+                    "description": "Cavalry and Arambai +3 attack against buildings",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Shwezigon Pagoda"
@@ -136,11 +196,21 @@
             "technology": {
                 "castle": {
                     "name": "Greek Fire",
-                    "description": "Fire Ships +1 range"
+                    "description": "Fire Ships +1 range",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Logistica",
-                    "description": "Cataphracts deal trample damage"
+                    "description": "Cataphracts deal trample damage",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Hagia Sophia"
@@ -158,11 +228,21 @@
             "technology": {
                 "castle": {
                     "name": "Stronghold",
-                    "description": "Castles and towers fire 25% faster"
+                    "description": "Castles and towers fire 25% faster",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Furor Celtica",
-                    "description": "Siege Workshop units have +40% HP"
+                    "description": "Siege Workshop units have +40% HP",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Rock of Cashel"
@@ -180,11 +260,21 @@
             "technology": {
                 "castle": {
                     "name": "Great Wall",
-                    "description": "Walls and towers +30% HP"
+                    "description": "Walls and towers +30% HP",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Rocketry",
-                    "description": "Chu Ko Nu +2, Scorpions +4 attack"
+                    "description": "Chu Ko Nu +2, Scorpions +4 attack",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Temple of Heaven"
@@ -201,11 +291,21 @@
             "technology": {
                 "castle": {
                     "name": "Steppe Husbandry",
-                    "description": "Scout Cavalry, Steppe Lancers and Cavalry Archers are trained 50% faster"
+                    "description": "Scout Cavalry, Steppe Lancers and Cavalry Archers are trained 50% faster",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Cuman Mercenaries",
-                    "description": "Team members can create 10 free Elite Kipchaks at the Castle"
+                    "description": "Team members can create 10 free Elite Kipchaks at the Castle",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Sarkel Fortress"
@@ -222,11 +322,21 @@
             "technology": {
                 "castle": {
                     "name": "Royal Heirs",
-                    "description": "Shotel Warrior trains twice as fast"
+                    "description": "Shotel Warrior trains twice as fast",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Torsion Engines",
-                    "description": "Siege Workshop units' blast radius increased"
+                    "description": "Siege Workshop units' blast radius increased",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Biete Amanuel"
@@ -244,11 +354,21 @@
             "technology": {
                 "castle": {
                     "name": "Chivalry",
-                    "description": "Stables work 40% faster"
+                    "description": "Stables work 40% faster",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Bearded Axe",
-                    "description": "Throwing Axeman +1 range"
+                    "description": "Throwing Axeman +1 range",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "St. Vitus Cathedral"
@@ -267,11 +387,21 @@
             "technology": {
                 "castle": {
                     "name": "Anarchy",
-                    "description": "Huskarls can be created at Barracks"
+                    "description": "Huskarls can be created at Barracks",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Perfusion",
-                    "description": "Barracks create units 100% faster"
+                    "description": "Barracks create units 100% faster",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Mausoleum of Theoderic I"
@@ -288,11 +418,21 @@
             "technology": {
                 "castle": {
                     "name": "Marauders",
-                    "description": "Create Tarkans at Stables"
+                    "description": "Create Tarkans at Stables",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Atheism",
-                    "description": "+100 years for Relic/Wonder victories, Spies/Treason cost -50%"
+                    "description": "+100 years for Relic/Wonder victories, Spies/Treason cost -50%",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Arch of Constantine (ruined)"
@@ -311,11 +451,21 @@
             "technology": {
                 "castle": {
                     "name": "Andean Sling",
-                    "description": "Slingers and Skirmisher have no minimum range"
+                    "description": "Slingers and Skirmisher have no minimum range",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Fabric Shields",
-                    "description": "Kamayuks, Slingers, and Eagle Warriors +1/+2"
+                    "description": "Kamayuks, Slingers, and Eagle Warriors +1/+2",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Temple of the Sun at Macchu Picchu"
@@ -332,11 +482,21 @@
             "technology": {
                 "castle": {
                     "name": "Sultans",
-                    "description": "All gold production +10% faster"
+                    "description": "All gold production +10% faster",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Shatagni",
-                    "description": "Hand Cannoneers +1 range"
+                    "description": "Hand Cannoneers +1 range",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Brihadeeswarar Temple"
@@ -354,11 +514,21 @@
             "technology": {
                 "castle": {
                     "name": "Pavise",
-                    "description": "Foot archers and Condottieri +1/+1 armor"
+                    "description": "Foot archers and Condottieri +1/+1 armor",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Silk Road",
-                    "description": "Trade units cost -50%"
+                    "description": "Trade units cost -50%",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Cathedral of St. Lawrence"
@@ -375,11 +545,21 @@
             "technology": {
                 "castle": {
                     "name": "Yasama",
-                    "description": "Towers fire extra arrows"
+                    "description": "Towers fire extra arrows",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Kataparuto",
-                    "description": "Trebuchets fire and pack faster"
+                    "description": "Trebuchets fire and pack faster",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Tōdai-ji"
@@ -398,11 +578,21 @@
             "technology": {
                 "castle": {
                     "name": "Tusk Swords",
-                    "description": "Battle Elephants +3 attack"
+                    "description": "Battle Elephants +3 attack",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Double Crossbow",
-                    "description": "Ballista Elephants and Scorpions shoot two projectiles"
+                    "description": "Ballista Elephants and Scorpions shoot two projectiles",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Angkor Wat"
@@ -422,11 +612,21 @@
             "technology": {
                 "castle": {
                     "name": "Panokseon",
-                    "description": "Turtle Ships move 15% faster"
+                    "description": "Turtle Ships move 15% faster",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Shinkichon",
-                    "description": "+1 range for Mangonels"
+                    "description": "+1 range for Mangonels",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Hwangnyong Temple"
@@ -443,11 +643,21 @@
             "technology": {
                 "castle": {
                     "name": "Hill Forts",
-                    "description": "Town Centers +3 range"
+                    "description": "Town Centers +3 range",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Tower Shields",
-                    "description": "Spearman and Skirmishers +2 pierce armor"
+                    "description": "Spearman and Skirmishers +2 pierce armor",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Trakai Island Castle"
@@ -464,11 +674,21 @@
             "technology": {
                 "castle": {
                     "name": "Corvinian Army",
-                    "description": "Magyar Huszars cost no gold"
+                    "description": "Magyar Huszars cost no gold",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Recurve Bow",
-                    "description": "Cavalry Archers + 1 range and attack"
+                    "description": "Cavalry Archers + 1 range and attack",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Hunyad Castle"
@@ -486,11 +706,21 @@
             "technology": {
                 "castle": {
                     "name": "Thalassocracy",
-                    "description": "Upgrades Docks to Harbors, which shoot arrows"
+                    "description": "Upgrades Docks to Harbors, which shoot arrows",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Forced Levy",
-                    "description": "Turns Militia gold cost to food cost"
+                    "description": "Turns Militia gold cost to food cost",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Kalasan Temple"
@@ -507,11 +737,21 @@
             "technology": {
                 "castle": {
                     "name": "Tigui",
-                    "description": "Town Centers fire arrows even without garrison"
+                    "description": "Town Centers fire arrows even without garrison",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Farimba",
-                    "description": "Stable units +5 attack"
+                    "description": "Stable units +5 attack",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Great Mosque of Djenné"
@@ -529,11 +769,21 @@
             "technology": {
                 "castle": {
                     "name": "Obsidian Arrows",
-                    "description": "Archers have +6 attack against buildings and stone defense"
+                    "description": "Archers have +6 attack against buildings and stone defense",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "El Dorado",
-                    "description": "+40 hit points for Eagle Warriors"
+                    "description": "+40 hit points for Eagle Warriors",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Tikal Temple I"
@@ -550,11 +800,21 @@
             "technology": {
                 "castle": {
                     "name": "Nomads",
-                    "description": "Houses retain population when destroyed"
+                    "description": "Houses retain population when destroyed",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Drill",
-                    "description": "Siege Workshop units move +50% faster"
+                    "description": "Siege Workshop units move +50% faster",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Great Tent of Genghis Khan"
@@ -570,11 +830,21 @@
             "technology": {
                 "castle": {
                     "name": "Kamandaran",
-                    "description": "Archer gold cost becomes wood cost"
+                    "description": "Archer gold cost becomes wood cost",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Mahouts",
-                    "description": "War Elephants move +30% faster"
+                    "description": "War Elephants move +30% faster",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Taq Kasra"
@@ -591,11 +861,21 @@
             "technology": {
                 "castle": {
                     "name": "Carrack",
-                    "description": "Ships +1/+1 armor"
+                    "description": "Ships +1/+1 armor",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Arquebus",
-                    "description": "Gunpowder units fire more accurately at moving targets"
+                    "description": "Gunpowder units fire more accurately at moving targets",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Belém Tower"
@@ -614,11 +894,21 @@
             "technology": {
                 "castle": {
                     "name": "Madrasah",
-                    "description": "33% of a Monk's gold cost are returned if the Monk gets killed"
+                    "description": "33% of a Monk's gold cost are returned if the Monk gets killed",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Zealotry",
-                    "description": "Camel Riders and Mamelukes +30 hit points"
+                    "description": "Camel Riders and Mamelukes +30 hit points",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Great Mosque of Samarra"
@@ -635,11 +925,21 @@
             "technology": {
                 "castle": {
                     "name": "Orthodoxy",
-                    "description": "+3/+3 armor for Monks"
+                    "description": "+3/+3 armor for Monks",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Druzhina",
-                    "description": "Infantry damage adjacent units"
+                    "description": "Infantry damage adjacent units",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Kizhi Pogost"
@@ -657,11 +957,21 @@
             "technology": {
                 "castle": {
                     "name": "Inquisition",
-                    "description": "Monk conversion rate improved"
+                    "description": "Monk conversion rate improved",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Supremacy",
-                    "description": "Increased attack, armor, and HP for Villagers"
+                    "description": "Increased attack, armor, and HP for Villagers",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Torre del Oro"
@@ -679,11 +989,21 @@
             "technology": {
                 "castle": {
                     "name": "Silk Armor",
-                    "description": "Scout Cavalry, Steppe Lancers and Cavalry Archers have +1 pierce armor"
+                    "description": "Scout Cavalry, Steppe Lancers and Cavalry Archers have +1 pierce armor",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Timurid Siegecraft",
-                    "description": "Trebuchets +2 range, enables Flaming Camels at the Castle"
+                    "description": "Trebuchets +2 range, enables Flaming Camels at the Castle",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Ulugh Beg Observatory"
@@ -703,11 +1023,21 @@
             "technology": {
                 "castle": {
                     "name": "Ironclad",
-                    "description": "Siege weapons +4 armor"
+                    "description": "Siege weapons +4 armor",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Crenellations",
-                    "description": "Castles +3 range; garrisoned infantry fires arrows"
+                    "description": "Castles +3 range; garrisoned infantry fires arrows",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Maria Laach Abbey"
@@ -726,11 +1056,21 @@
             "technology": {
                 "castle": {
                     "name": "Sipahi",
-                    "description": "Cavalry Archers +20 hit points"
+                    "description": "Cavalry Archers +20 hit points",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Artillery",
-                    "description": "+2 range for Bombard Towers, Bombard Cannons, Cannon Galleons"
+                    "description": "+2 range for Bombard Towers, Bombard Cannons, Cannon Galleons",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Selimiye Mosque"
@@ -748,11 +1088,21 @@
             "technology": {
                 "castle": {
                     "name": "Chatras",
-                    "description": "Battle Elephants +50 hit points"
+                    "description": "Battle Elephants +50 hit points",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Paper Money",
-                    "description": "Tributes 500 gold to each ally"
+                    "description": "Tributes 500 gold to each ally",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Bút Tháp"
@@ -769,11 +1119,21 @@
             "technology": {
                 "castle": {
                     "name": "Chieftains",
-                    "description": "Infantry get attack bonus against cavalry"
+                    "description": "Infantry get attack bonus against cavalry",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 },
                 "imperial": {
                     "name": "Berserkergang",
-                    "description": "Berserks regenerate faster"
+                    "description": "Berserks regenerate faster",
+                    "gold_cost": 0,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 0
                 }
             },
             "Wonder": "Borgund Stave Church"

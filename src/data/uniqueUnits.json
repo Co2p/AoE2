@@ -1,183 +1,408 @@
 {
     "uniqueUnits": [{
             "name": "Jaguar Warior",
-            "id": 0
+            "id": 0,
+            "gold_cost": 30,
+            "wood_cost": 0,
+            "food_cost": 60,
+            "stone_cost": 0,
+            "training_time": 17
         },
         {
             "name": "Longbowman",
-            "id": 1
+            "id": 1,
+            "gold_cost": 40,
+            "wood_cost": 35,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 18
         },
         {
             "name": "Konnik",
-            "id": 2
+            "id": 2,
+            "gold_cost": 70,
+            "wood_cost": 0,
+            "food_cost": 60,
+            "stone_cost": 0,
+            "training_time": 19
         },
         {
             "name": "Camel Archer",
-            "id": 3
+            "id": 3,
+            "gold_cost": 60,
+            "wood_cost": 50,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 25
         },
         {
             "name": "Arambai",
-            "id": 4
+            "id": 4,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Cataphract",
-            "id": 5
+            "id": 5,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Woad Raider",
-            "id": 6
+            "id": 6,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Chu Ko Nu",
-            "id": 7
+            "id": 7,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Kipchak",
-            "id": 8
+            "id": 8,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Shotel Warrior",
-            "id": 9
+            "id": 9,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Throwing Axeman",
-            "id": 10
+            "id": 10,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Genitour",
-            "id": 11
+            "id": 11,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Huskarl",
-            "id": 12
+            "id": 12,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Tarkan",
-            "id": 13
+            "id": 13,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Kamayuk",
-            "id": 14
+            "id": 14,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Slinger",
-            "id": 15
+            "id": 15,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Elephant Archer",
-            "id": 16
+            "id": 16,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Imperial Camel Rider",
-            "id": 17
+            "id": 17,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Genoese Crossbowman",
-            "id": 18
+            "id": 18,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Condottiero",
-            "id": 19
+            "id": 19,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Samurai",
-            "id": 20
+            "id": 20,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Ballista Elephant",
-            "id": 21
+            "id": 21,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "War Wagon",
-            "id": 22
+            "id": 22,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Turtle Ship",
-            "id": 23
+            "id": 23,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Leitis",
-            "id": 24
+            "id": 24,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Magyar Huszar",
-            "id": 25
+            "id": 25,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Karambit Warrior",
-            "id": 26
+            "id": 26,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Gbeto",
-            "id": 27
+            "id": 27,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Plumed Archer",
-            "id": 28
+            "id": 28,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Mangudai",
-            "id": 29
+            "id": 29,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "War Elephant",
-            "id": 30
+            "id": 30,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Organ Gun",
-            "id": 31
+            "id": 31,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Caravel",
-            "id": 32
+            "id": 32,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Mameluke",
-            "id": 33
+            "id": 33,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Boyar",
-            "id": 34
+            "id": 34,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Conquistador",
-            "id": 35
+            "id": 35,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Missionary",
-            "id": 36
+            "id": 36,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Keshik",
-            "id": 37
+            "id": 37,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Flaming Camel",
-            "id": 38
+            "id": 38,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Teutonic Knight",
-            "id": 39
+            "id": 39,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Janissary",
-            "id": 40
+            "id": 40,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Rattan Archer",
-            "id": 41
+            "id": 41,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Imperial Skirmisher",
-            "id": 42
+            "id": 42,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Berserk",
-            "id": 43
+            "id": 43,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         },
         {
             "name": "Longboat",
-            "id": 44
+            "id": 44,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0
         }
     ]
 }
