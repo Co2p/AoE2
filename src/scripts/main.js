@@ -9,32 +9,38 @@ import { civs, specialities, uniqueUnits } from '../data/civs.json';
 
 /**
  * 
- * @param {HTMLElement} element Element to append options into
- * @param {DropdownItem[]} items Array of items to use when creating the dropdown, elements have attributes "id" and "name"
+ * @param {HTMLElement} dropdownElement Element to append options into
+ * @param {DropdownItem[]} dropdownItems Array of items to use when creating the dropdown, elements have attributes "id" and "name"
  */
-function populateDropdown(element, items) {
-    items.forEach(item => {
+function populateDropdown(dropdownElement, dropdownItems) {
+    dropdownItems.forEach(dropdownItem => {
         let option = document.createElement("option");
         option.className = "dropdown-item";
-        option.innerText = item.name;
-        option.value = item.id;
+        option.innerText = dropdownItem.name;
+        option.value = dropdownItem.id;
         option.href = "#";
-        element.appendChild(option);
+        dropdownElement.appendChild(option);
     });
 }
 
-function resetInfo() {
+function emptyCivInfoHTML() {
     let g = document.getElementById("grid");
     g.innerHTML = "";
 }
 
-function createCivHTML(civData) {
+/**
+ * 
+ * @param {civ} civData 
+ */
+function createCivInfoHTML(civData) {
     let g = document.getElementById("grid");
     const headerSize = "h5"
 
     let civDiv = document.createElement("div");
     civDiv.className = "civcontainer";
     civDiv.appendChild(header(civData.name, "h1"));
+
+    const civInfoStruct = [{header: HTMLElement, info: Node}];
 
     const uniqueUnitHeader = header("Unique Units", headerSize);
     const castleUniqueTechHeader = header(`Castle Unique Technologies: ${civData.technology.castle.name}`, headerSize);
@@ -43,13 +49,15 @@ function createCivHTML(civData) {
     const civilizationBonusHeader = header("Civilization bonuses", headerSize);
     const specialityHeader = header("Specialty", headerSize);
 
-    const uniqueUnitList = listify(civData.UU, uniqueUnits.map(x => x.name));
+    const uniqueUnitList = createUnorderedListFromArray(civData.UU, uniqueUnits.map(x => x.name));
     const castleUniqueTech =  document.createTextNode(civData.technology.castle.description);
     const imperialUniqueTech = document.createTextNode(civData.technology.imperial.description);
     const teamBonus = document.createTextNode(civData.TeamBonus);
-    const civilizationBonusList =  listify(civData.CivBonus);
-    const specialityList =  listify(civData.speciality, specialities.slice(1, civs.length).map(x => x.name));
+    const civilizationBonusList =  createUnorderedListFromArray(civData.CivBonus);
+    const specialityList =  createUnorderedListFromArray(civData.speciality, specialities.slice(1, civs.length).map(x => x.name));
 
+    civInfoStruct.push({header: uniqueUnitHeader, info: uniqueUnitList});
+    console.log(civInfoStruct);
     const uniqueUnitsElement = createListItemWithHeader(uniqueUnitHeader, uniqueUnitList);
     const castleTechElement = createListItemWithHeader(castleUniqueTechHeader,castleUniqueTech);
     const imperialTechElement = createListItemWithHeader(imperialUniqueTechHeader, imperialUniqueTech);
@@ -65,6 +73,20 @@ function createCivHTML(civData) {
     civDiv.appendChild(civilizationBonusElement);
 
     g.appendChild(civDiv);
+}
+
+/**
+ * 
+ * @param {number[]} ids 
+ * @param {any[]} array 
+ */
+function getDataFromArrayForIds(ids, array) {
+    let matchingItems;
+    ids.forEach((id) => {
+        if (idIsDefined(id)) {
+            matchingItems.push(array.find(item => item.id === id));
+        }
+    })
 }
 
 /**
@@ -86,12 +108,11 @@ function createListItemWithHeader(header, body) {
  * @param {string[]} dataArray Array of data to fetch from, if not provided array will be used as dataArray too.
  * @returns {HTMLUListElement} A HTML list of items
  */
-function listify(array, dataArray) {
+function createUnorderedListFromArray(array) {
     let list = document.createElement("ul");
-    const all = (typeof dataArray === "undefined");
-    array.forEach((i) => {
+    array.forEach((item) => {
         let element = document.createElement("li",);
-        element.innerText = all ? i : dataArray[i];
+        element.innerText = item;
         list.appendChild(element);
     });
     return list;
@@ -116,7 +137,7 @@ function header(text, size) {
  */
 function sortDropdown(ddlItems) {
     return ddlItems.sort((a, b) => {
-        if (indexIsUnDefined(a.id)) {
+        if (idIsUnDefined(a.id)) {
             return -1;
         }
         return a.name < b.name ? -1 : 1
@@ -127,12 +148,12 @@ function sortDropdown(ddlItems) {
  * Creates a Civ HTML div for each civ.id that matches
  * @param {number} civId 
  */
-function createCivHTMLUsingCivId(civId) {
-    resetInfo();
-    if (indexIsDefined(civId)) {
+function createCivInfoHTMLUsingCivId(civId) {
+    emptyCivInfoHTML();
+    if (idIsDefined(civId)) {
         civs.forEach(civ => {
             if (civ.id === Number(civId)) {
-                createCivHTML(civ);
+                createCivInfoHTML(civ);
             }
         });
     }
@@ -147,7 +168,7 @@ function civDropdown() {
     let civDropdown = document.getElementById("civ-dropdown");
     civDropdown.onchange = (event) => {
         const civId = event.target.value;
-        createCivHTMLUsingCivId(civId);
+        createCivInfoHTMLUsingCivId(civId);
     };
     populateDropdown(civDropdown, sortDropdown(civs));
 }
@@ -156,7 +177,7 @@ function techDropdown() {
     let techDropdown = document.getElementById("tech-dropdown");
     techDropdown.onchange = (event) => {
         const civId = event.target.value;
-        createCivHTMLUsingCivId(civId);
+        createCivInfoHTMLUsingCivId(civId);
     };
     populateDropdown(techDropdown, sortDropdown(getAllTechnologies()));
 }
@@ -164,7 +185,7 @@ function techDropdown() {
 function getAllTechnologies() {
     let ddlItems = [];
     civs.forEach(x => {
-        if (indexIsDefined(x.id)) {
+        if (idIsDefined(x.id)) {
             let castle = {};
             let imperial = {};
             castle.name = formatTechnologyString(x.technology.castle);
@@ -188,11 +209,11 @@ function specDropdown() {
     let specialitiesDropdown = document.getElementById("specialities-dropdown");
     specialitiesDropdown.onchange = (event) => {
         const specialityId = event.target.value;
-        resetInfo();
-        if (indexIsDefined(specialityId)) {
+        emptyCivInfoHTML();
+        if (idIsDefined(specialityId)) {
             civs.forEach(civ => {
                 if (civ.speciality.includes(Number(specialityId))) {
-                    createCivHTML(civ);
+                    createCivInfoHTML(civ);
                 }
             });
         }
@@ -204,14 +225,14 @@ function specDropdown() {
  * True if index is not -1
  * @param {number} index index of a array
  */
-function indexIsDefined(index) {
+function idIsDefined(index) {
     return Number(index) !== -1;
 }
 
 /* True if index is -1
  * @param {number} index index of a array
  */
-function indexIsUnDefined(index) {
+function idIsUnDefined(index) {
     return Number(index) === -1;
 }
 
