@@ -42,7 +42,7 @@ function createCivInfoHTML(civData) {
     civDiv.className = "civcontainer";
     civDiv.appendChild(header(civData.name, "h1"));
 
-    const civInfoStruct = [{header: HTMLElement, info: Node}];
+    const civInfoStruct = [];
 
     const uniqueUnitHeader = header("Unique Units", headerSize);
     const castleUniqueTechHeader = header(`Castle Unique Technologies: ${civData.technology.castle.name}`, headerSize);
@@ -51,29 +51,23 @@ function createCivInfoHTML(civData) {
     const civilizationBonusHeader = header("Civilization bonuses", headerSize);
     const specialityHeader = header("Specialty", headerSize);
 
-    const uniqueUnitList = createUnorderedListFromArray(civData.UU, uniqueUnits.map(x => x.name));
+    const uniqueUnitList = createUnorderedListFromArray(getDataFromArrayForIds(civData.UU, uniqueUnits).map(uniqueUnit => uniqueUnit.name));
     const castleUniqueTech =  document.createTextNode(civData.technology.castle.description);
     const imperialUniqueTech = document.createTextNode(civData.technology.imperial.description);
     const teamBonus = document.createTextNode(civData.TeamBonus);
     const civilizationBonusList =  createUnorderedListFromArray(civData.CivBonus);
-    const specialityList =  createUnorderedListFromArray(civData.speciality, specialities.slice(1, civs.length).map(x => x.name));
+    const specialityList =  createUnorderedListFromArray(getDataFromArrayForIds(civData.speciality, specialities).map(x => x.name));
 
-    civInfoStruct.push({header: uniqueUnitHeader, info: uniqueUnitList});
-    console.log(civInfoStruct);
-    const uniqueUnitsElement = createListItemWithHeader(uniqueUnitHeader, uniqueUnitList);
-    const castleTechElement = createListItemWithHeader(castleUniqueTechHeader,castleUniqueTech);
-    const imperialTechElement = createListItemWithHeader(imperialUniqueTechHeader, imperialUniqueTech);
-    const teamBonusElement = createListItemWithHeader(teamBonusHeader, teamBonus);
-    const civilizationBonusElement = createListItemWithHeader(civilizationBonusHeader, civilizationBonusList);
-    const specialityElement = createListItemWithHeader(specialityHeader,specialityList);
+    civInfoStruct.push([uniqueUnitHeader, uniqueUnitList]);
+    civInfoStruct.push([castleUniqueTechHeader, castleUniqueTech]);
+    civInfoStruct.push([imperialUniqueTechHeader, imperialUniqueTech]);
+    civInfoStruct.push([teamBonusHeader, teamBonus]);
+    civInfoStruct.push([civilizationBonusHeader, civilizationBonusList]);
+    civInfoStruct.push([specialityHeader, specialityList]);
 
-    civDiv.appendChild(specialityElement);
-    civDiv.appendChild(uniqueUnitsElement);
-    civDiv.appendChild(castleTechElement);
-    civDiv.appendChild(imperialTechElement);
-    civDiv.appendChild(teamBonusElement);
-    civDiv.appendChild(civilizationBonusElement);
-
+    civInfoStruct.forEach((info) => {
+        civDiv.appendChild(createDivOfAllElementsInArray(info, "list-group-item"));
+    })
     g.appendChild(civDiv);
 }
 
@@ -83,25 +77,25 @@ function createCivInfoHTML(civData) {
  * @param {any[]} array 
  */
 function getDataFromArrayForIds(ids, array) {
-    let matchingItems;
+    let matchingItems = [];
     ids.forEach((id) => {
         if (idIsDefined(id)) {
             matchingItems.push(array.find(item => item.id === id));
         }
-    })
+    });
+    return matchingItems;
 }
 
 /**
- * Creates a div for information regarding one stat of a civ
- * @param {HTMLElement} header Header element
- * @param {HTMLElement} body Body element
+ * Creates a div and appends all elemnts in the array into that div
+ * @param {HTMLElement[]} elements Header element
+ * @param {string} parentDivClass class to append to the parent
  */
-function createListItemWithHeader(header, body) {
-    let e = document.createElement("li");
-    e.className = "list-group-item";
-    e.appendChild(header);
-    e.appendChild(body);
-    return e;
+function createDivOfAllElementsInArray(elements, parentDivClass) {
+    let parentDiv = document.createElement("li");
+    parentDiv.className = parentDivClass;
+    elements.forEach(element => parentDiv.appendChild(element));
+    return parentDiv;
 }
 
 /**
@@ -225,17 +219,17 @@ function specDropdown() {
 
 /**
  * True if index is not -1
- * @param {number} index index of a array
+ * @param {number} id index of a array
  */
-function idIsDefined(index) {
-    return Number(index) !== -1;
+function idIsDefined(id) {
+    return Number(id) !== -1;
 }
 
-/* True if index is -1
+/** True if index is -1
  * @param {number} index index of a array
  */
-function idIsUnDefined(index) {
-    return Number(index) === -1;
+function idIsUnDefined(id) {
+    return Number(id) === -1;
 }
 
 let pickDropdown = document.getElementById("pick-dropdown");
