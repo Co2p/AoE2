@@ -133,20 +133,20 @@
                 "castle": {
                     "name": "Stirrups",
                     "description": "Light Cavalry, Knight and Konniks attack 33% faster",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 200,
+                    "food_cost": 400,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 35
                 },
                 "imperial": {
                     "name": "Bagains",
                     "description": "Militia +5 melee armor",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 450,
+                    "food_cost": 900,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Preslav Round Church"
@@ -165,19 +165,19 @@
                     "name": "Howdah",
                     "description": "Battle Elephants +1/+1 armor",
                     "gold_cost": 0,
-                    "food_cost": 0,
-                    "stone_cost": 0,
+                    "food_cost": 400,
+                    "stone_cost": 300,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Manipur Cavalry",
                     "description": "Cavalry and Arambai +3 attack against buildings",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 400,
+                    "food_cost": 650,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Shwezigon Pagoda"
@@ -197,20 +197,20 @@
                 "castle": {
                     "name": "Greek Fire",
                     "description": "Fire Ships +1 range",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 250,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Logistica",
                     "description": "Cataphracts deal trample damage",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 600,
+                    "food_cost": 800,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 50
                 }
             },
             "Wonder": "Hagia Sophia"
@@ -229,20 +229,20 @@
                 "castle": {
                     "name": "Stronghold",
                     "description": "Castles and towers fire 25% faster",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 200,
+                    "food_cost": 250,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 30
                 },
                 "imperial": {
                     "name": "Furor Celtica",
                     "description": "Siege Workshop units have +40% HP",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 450,
+                    "food_cost": 750,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 50
                 }
             },
             "Wonder": "Rock of Cashel"
@@ -263,18 +263,18 @@
                     "description": "Walls and towers +30% HP",
                     "gold_cost": 0,
                     "food_cost": 0,
-                    "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "stone_cost": 200,
+                    "wood_cost": 400,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Rocketry",
                     "description": "Chu Ko Nu +2, Scorpions +4 attack",
-                    "gold_cost": 0,
+                    "gold_cost": 600,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 600,
+                    "research_time": 60
                 }
             },
             "Wonder": "Temple of Heaven"
@@ -293,19 +293,19 @@
                     "name": "Steppe Husbandry",
                     "description": "Scout Cavalry, Steppe Lancers and Cavalry Archers are trained 50% faster",
                     "gold_cost": 0,
-                    "food_cost": 0,
+                    "food_cost": 200,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 300,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Cuman Mercenaries",
                     "description": "Team members can create 10 free Elite Kipchaks at the Castle",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 400,
+                    "food_cost": 650,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Sarkel Fortress"
@@ -323,20 +323,20 @@
                 "castle": {
                     "name": "Royal Heirs",
                     "description": "Shotel Warrior trains twice as fast",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 300,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Torsion Engines",
                     "description": "Siege Workshop units' blast radius increased",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 600,
+                    "food_cost": 1000,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 60
                 }
             },
             "Wonder": "Biete Amanuel"
