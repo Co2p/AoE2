@@ -364,11 +364,11 @@
                 "imperial": {
                     "name": "Bearded Axe",
                     "description": "Throwing Axeman +1 range",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 400,
+                    "food_cost": 400,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 60
                 }
             },
             "Wonder": "St. Vitus Cathedral"
@@ -397,11 +397,11 @@
                 "imperial": {
                     "name": "Perfusion",
                     "description": "Barracks create units 100% faster",
-                    "gold_cost": 0,
+                    "gold_cost": 600,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 400,
+                    "research_time": 40
                 }
             },
             "Wonder": "Mausoleum of Theoderic I"
@@ -428,11 +428,11 @@
                 "imperial": {
                     "name": "Atheism",
                     "description": "+100 years for Relic/Wonder victories, Spies/Treason cost -50%",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 500,
+                    "food_cost": 500,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 60
                 }
             },
             "Wonder": "Arch of Constantine (ruined)"
@@ -461,11 +461,11 @@
                 "imperial": {
                     "name": "Fabric Shields",
                     "description": "Kamayuks, Slingers, and Eagle Warriors +1/+2",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 600,
+                    "food_cost": 600,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Temple of the Sun at Macchu Picchu"
@@ -492,11 +492,11 @@
                 "imperial": {
                     "name": "Shatagni",
                     "description": "Hand Cannoneers +1 range",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 500,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Brihadeeswarar Temple"
