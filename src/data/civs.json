@@ -106,7 +106,7 @@
                     "food_cost": 0,
                     "stone_cost": 0,
                     "wood_cost": 750,
-                    "research_time": 0
+                    "research_time": 60
                 },
                 "imperial": {
                     "name": "Warwolf",
@@ -115,7 +115,7 @@
                     "food_cost": 0,
                     "stone_cost": 0,
                     "wood_cost": 800,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Chichester Cathedral"
