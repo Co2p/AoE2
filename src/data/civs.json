@@ -355,11 +355,11 @@
                 "castle": {
                     "name": "Chivalry",
                     "description": "Stables work 40% faster",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 400,
+                    "food_cost": 400,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Bearded Axe",
@@ -388,11 +388,11 @@
                 "castle": {
                     "name": "Anarchy",
                     "description": "Huskarls can be created at Barracks",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 250,
+                    "food_cost": 450,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Perfusion",
@@ -419,11 +419,11 @@
                 "castle": {
                     "name": "Marauders",
                     "description": "Create Tarkans at Stables",
-                    "gold_cost": 0,
+                    "gold_cost": 200,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 300,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Atheism",
@@ -452,11 +452,11 @@
                 "castle": {
                     "name": "Andean Sling",
                     "description": "Slingers and Skirmisher have no minimum range",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 200,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Fabric Shields",
@@ -484,10 +484,10 @@
                     "name": "Sultans",
                     "description": "All gold production +10% faster",
                     "gold_cost": 0,
-                    "food_cost": 0,
+                    "food_cost": 400,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 400,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Shatagni",
@@ -515,11 +515,11 @@
                 "castle": {
                     "name": "Pavise",
                     "description": "Foot archers and Condottieri +1/+1 armor",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 150,
+                    "food_cost": 300,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Silk Road",
@@ -547,10 +547,10 @@
                     "name": "Yasama",
                     "description": "Towers fire extra arrows",
                     "gold_cost": 0,
-                    "food_cost": 0,
+                    "food_cost": 300,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 300,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Kataparuto",
@@ -579,11 +579,11 @@
                 "castle": {
                     "name": "Tusk Swords",
                     "description": "Battle Elephants +3 attack",
-                    "gold_cost": 0,
+                    "gold_cost": 300,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 200,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Double Crossbow",
@@ -614,10 +614,10 @@
                     "name": "Panokseon",
                     "description": "Turtle Ships move 15% faster",
                     "gold_cost": 0,
-                    "food_cost": 0,
+                    "food_cost": 300,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 300,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Shinkichon",
@@ -644,11 +644,11 @@
                 "castle": {
                     "name": "Hill Forts",
                     "description": "Town Centers +3 range",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 250,
+                    "food_cost": 250,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Tower Shields",
