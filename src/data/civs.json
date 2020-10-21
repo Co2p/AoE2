@@ -524,11 +524,11 @@
                 "imperial": {
                     "name": "Silk Road",
                     "description": "Trade units cost -50%",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 250,
+                    "food_cost": 500,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 60
                 }
             },
             "Wonder": "Cathedral of St. Lawrence"
@@ -555,11 +555,11 @@
                 "imperial": {
                     "name": "Kataparuto",
                     "description": "Trebuchets fire and pack faster",
-                    "gold_cost": 0,
+                    "gold_cost": 400,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 750,
+                    "research_time": 60
                 }
             },
             "Wonder": "Tōdai-ji"
@@ -588,11 +588,11 @@
                 "imperial": {
                     "name": "Double Crossbow",
                     "description": "Ballista Elephants and Scorpions shoot two projectiles",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 400,
+                    "food_cost": 700,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Angkor Wat"
@@ -622,11 +622,11 @@
                 "imperial": {
                     "name": "Shinkichon",
                     "description": "+1 range for Mangonels",
-                    "gold_cost": 0,
+                    "gold_cost": 500,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 800,
+                    "research_time": 60
                 }
             },
             "Wonder": "Hwangnyong Temple"
@@ -653,11 +653,11 @@
                 "imperial": {
                     "name": "Tower Shields",
                     "description": "Spearman and Skirmishers +2 pierce armor",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 200,
+                    "food_cost": 500,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Trakai Island Castle"
@@ -684,11 +684,11 @@
                 "imperial": {
                     "name": "Recurve Bow",
                     "description": "Cavalry Archers + 1 range and attack",
-                    "gold_cost": 0,
+                    "gold_cost": 400,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 600,
+                    "research_time": 40
                 }
             },
             "Wonder": "Hunyad Castle"
@@ -716,11 +716,11 @@
                 "imperial": {
                     "name": "Forced Levy",
                     "description": "Turns Militia gold cost to food cost",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 500,
+                    "food_cost": 850,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Kalasan Temple"
@@ -747,11 +747,11 @@
                 "imperial": {
                     "name": "Farimba",
                     "description": "Stable units +5 attack",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 400,
+                    "food_cost": 650,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Great Mosque of Djenné"
@@ -779,11 +779,11 @@
                 "imperial": {
                     "name": "El Dorado",
                     "description": "+40 hit points for Eagle Warriors",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 450,
+                    "food_cost": 750,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 70
                 }
             },
             "Wonder": "Tikal Temple I"
@@ -810,11 +810,11 @@
                 "imperial": {
                     "name": "Drill",
                     "description": "Siege Workshop units move +50% faster",
-                    "gold_cost": 0,
+                    "gold_cost": 450,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 500,
+                    "research_time": 60
                 }
             },
             "Wonder": "Great Tent of Genghis Khan"
@@ -840,11 +840,11 @@
                 "imperial": {
                     "name": "Mahouts",
                     "description": "War Elephants move +30% faster",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 300,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 50
                 }
             },
             "Wonder": "Taq Kasra"
@@ -871,11 +871,11 @@
                 "imperial": {
                     "name": "Arquebus",
                     "description": "Gunpowder units fire more accurately at moving targets",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 400,
+                    "food_cost": 700,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Belém Tower"
@@ -904,11 +904,11 @@
                 "imperial": {
                     "name": "Zealotry",
                     "description": "Camel Riders and Mamelukes +30 hit points",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 700,
+                    "food_cost": 750,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 50
                 }
             },
             "Wonder": "Great Mosque of Samarra"
@@ -935,11 +935,11 @@
                 "imperial": {
                     "name": "Druzhina",
                     "description": "Infantry damage adjacent units",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 500,
+                    "food_cost": 1200,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Kizhi Pogost"
@@ -967,11 +967,11 @@
                 "imperial": {
                     "name": "Supremacy",
                     "description": "Increased attack, armor, and HP for Villagers",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 250,
+                    "food_cost": 400,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 60
                 }
             },
             "Wonder": "Torre del Oro"
@@ -999,11 +999,11 @@
                 "imperial": {
                     "name": "Timurid Siegecraft",
                     "description": "Trebuchets +2 range, enables Flaming Camels at the Castle",
-                    "gold_cost": 0,
+                    "gold_cost": 500,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 400,
+                    "research_time": 50
                 }
             },
             "Wonder": "Ulugh Beg Observatory"
@@ -1034,10 +1034,10 @@
                     "name": "Crenellations",
                     "description": "Castles +3 range; garrisoned infantry fires arrows",
                     "gold_cost": 0,
-                    "food_cost": 0,
-                    "stone_cost": 0,
+                    "food_cost": 600,
+                    "stone_cost": 400,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 60
                 }
             },
             "Wonder": "Maria Laach Abbey"
@@ -1066,11 +1066,11 @@
                 "imperial": {
                     "name": "Artillery",
                     "description": "+2 range for Bombard Towers, Bombard Cannons, Cannon Galleons",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 500,
+                    "food_cost": 450,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Selimiye Mosque"
@@ -1099,10 +1099,10 @@
                     "name": "Paper Money",
                     "description": "Tributes 500 gold to each ally",
                     "gold_cost": 0,
-                    "food_cost": 0,
+                    "food_cost": 500,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 300,
+                    "research_time": 60
                 }
             },
             "Wonder": "Bút Tháp"
@@ -1129,11 +1129,11 @@
                 "imperial": {
                     "name": "Berserkergang",
                     "description": "Berserks regenerate faster",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 400,
+                    "food_cost": 850,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 }
             },
             "Wonder": "Borgund Stave Church"
