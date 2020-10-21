@@ -44,6 +44,8 @@ function createCivInfoHTML(civData) {
 
     const civInfoStruct = [];
 
+    console.log(civData.technology.castle.gold_cost);
+
     const uniqueUnitHeader = header("Unique Units", headerSize);
     const castleUniqueTechHeader = header(`Castle Unique Technologies: ${civData.technology.castle.name}`, headerSize);
     const imperialUniqueTechHeader = header(`Imperial Unique Technologies: ${civData.technology.imperial.name}`, headerSize);
@@ -51,17 +53,21 @@ function createCivInfoHTML(civData) {
     const civilizationBonusHeader = header("Civilization bonuses", headerSize);
     const specialityHeader = header("Specialty", headerSize);
 
-    const specialityList =  createUnorderedListFromArray(getDataFromArrayForIds(civData.speciality, specialities).map(x => x.name));
+    const specialityList = createUnorderedListFromArray(getDataFromArrayForIds(civData.speciality, specialities).map(x => x.name));
     const uniqueUnitList = createUnorderedListFromArray(getDataFromArrayForIds(civData.UU, uniqueUnits).map(uniqueUnit => uniqueUnit.name));
-    const castleUniqueTech =  document.createTextNode(civData.technology.castle.description);
+    const castleUniqueTech = document.createTextNode(civData.technology.castle.description);
+    const castleUniqueTechCost = createCostDiv(civData.technology.castle);
+    
     const imperialUniqueTech = document.createTextNode(civData.technology.imperial.description);
+    const imperialUniqueTechCost = createCostDiv(civData.technology.imperial);
+
     const teamBonus = document.createTextNode(civData.TeamBonus);
-    const civilizationBonusList =  createUnorderedListFromArray(civData.CivBonus);
+    const civilizationBonusList = createUnorderedListFromArray(civData.CivBonus);
 
     civInfoStruct.push([specialityHeader, specialityList]);
     civInfoStruct.push([uniqueUnitHeader, uniqueUnitList]);
-    civInfoStruct.push([castleUniqueTechHeader, castleUniqueTech]);
-    civInfoStruct.push([imperialUniqueTechHeader, imperialUniqueTech]);
+    civInfoStruct.push([castleUniqueTechHeader, castleUniqueTech, castleUniqueTechCost]);
+    civInfoStruct.push([imperialUniqueTechHeader, imperialUniqueTech, imperialUniqueTechCost]);
     civInfoStruct.push([teamBonusHeader, teamBonus]);
     civInfoStruct.push([civilizationBonusHeader, civilizationBonusList]);
 
@@ -97,6 +103,27 @@ function createDivOfAllElementsInArray(elements, parentDivClass) {
     elements.forEach(element => parentDiv.appendChild(element));
     return parentDiv;
 }
+
+/**
+ * 
+ * @param {{gold_cost,wood_cost,food_cost,stone_cost}} cost 
+ */
+function createCostDiv(cost) {
+    let parentDiv = document.createElement("div");
+    parentDiv.className = "cost-div"
+    const costList = [cost.gold_cost, cost.wood_cost, cost.stone_cost, cost.food_cost, cost.research_time];
+    const resource = ["Gold", "Wood", "Stone", "Food", "seconds Research"];
+    costList.forEach((c, i) => {
+        if (c !== 0){
+            const resourceDiv = document.createElement("p");
+            resourceDiv.innerText = `${c} ${resource[i]}`;
+            resourceDiv.className = `resource badge badge-pill ${resource[i]}`;
+            parentDiv.appendChild(resourceDiv);
+        }
+    });
+    return parentDiv;
+}
+
 
 /**
  * Make a html list node from a array
