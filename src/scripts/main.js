@@ -44,8 +44,6 @@ function createCivInfoHTML(civData) {
 
     const civInfoStruct = [];
 
-    console.log(civData.technology.castle.gold_cost);
-
     const uniqueUnitHeader = header("Unique Units", headerSize);
     const castleUniqueTechHeader = header(`Castle Unique Technologies: ${civData.technology.castle.name}`, headerSize);
     const imperialUniqueTechHeader = header(`Imperial Unique Technologies: ${civData.technology.imperial.name}`, headerSize);
@@ -115,13 +113,19 @@ function createCostDiv(cost) {
     const resource = ["Gold", "Wood", "Stone", "Food", "seconds Research"];
     costList.forEach((c, i) => {
         if (c !== 0){
-            const resourceDiv = document.createElement("p");
-            resourceDiv.innerText = `${c} ${resource[i]}`;
-            resourceDiv.className = `resource badge badge-pill ${resource[i]}`;
+            const resourceDiv = createPill(`${c} ${resource[i]}`, `resource badge badge-pill ${resource[i].toLowerCase()}`);
             parentDiv.appendChild(resourceDiv);
         }
     });
     return parentDiv;
+}
+
+
+function createPill(text, classNames) {
+    const pill = document.createElement("p");
+    pill.innerText = text;
+    pill.className = classNames;
+    return pill;
 }
 
 
