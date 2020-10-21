@@ -675,11 +675,11 @@
                 "castle": {
                     "name": "Corvinian Army",
                     "description": "Magyar Huszars cost no gold",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 200,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Recurve Bow",
@@ -707,11 +707,11 @@
                 "castle": {
                     "name": "Thalassocracy",
                     "description": "Upgrades Docks to Harbors, which shoot arrows",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 300,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Forced Levy",
@@ -739,10 +739,10 @@
                     "name": "Tigui",
                     "description": "Town Centers fire arrows even without garrison",
                     "gold_cost": 0,
-                    "food_cost": 0,
+                    "food_cost": 200,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 300,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Farimba",
@@ -770,11 +770,11 @@
                 "castle": {
                     "name": "Obsidian Arrows",
                     "description": "Archers have +6 attack against buildings and stone defense",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 300,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "El Dorado",
@@ -801,11 +801,11 @@
                 "castle": {
                     "name": "Nomads",
                     "description": "Houses retain population when destroyed",
-                    "gold_cost": 0,
+                    "gold_cost": 150,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 300,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Drill",
@@ -831,11 +831,11 @@
                 "castle": {
                     "name": "Kamandaran",
                     "description": "Archer gold cost becomes wood cost",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 400,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Mahouts",
@@ -862,11 +862,11 @@
                 "castle": {
                     "name": "Carrack",
                     "description": "Ships +1/+1 armor",
-                    "gold_cost": 0,
+                    "gold_cost": 300,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 200,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Arquebus",
@@ -895,11 +895,11 @@
                 "castle": {
                     "name": "Madrasah",
                     "description": "33% of a Monk's gold cost are returned if the Monk gets killed",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 100,
+                    "food_cost": 200,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 30
                 },
                 "imperial": {
                     "name": "Zealotry",
@@ -926,11 +926,11 @@
                 "castle": {
                     "name": "Orthodoxy",
                     "description": "+3/+3 armor for Monks",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 200,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Druzhina",
@@ -958,11 +958,11 @@
                 "castle": {
                     "name": "Inquisition",
                     "description": "Monk conversion rate improved",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 100,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Supremacy",
@@ -990,11 +990,11 @@
                 "castle": {
                     "name": "Silk Armor",
                     "description": "Scout Cavalry, Steppe Lancers and Cavalry Archers have +1 pierce armor",
-                    "gold_cost": 0,
+                    "gold_cost": 300,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 400,
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Timurid Siegecraft",
@@ -1024,11 +1024,11 @@
                 "castle": {
                     "name": "Ironclad",
                     "description": "Siege weapons +4 armor",
-                    "gold_cost": 0,
+                    "gold_cost": 350,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 0
+                    "wood_cost": 400,
+                    "research_time": 60
                 },
                 "imperial": {
                     "name": "Crenellations",
@@ -1057,11 +1057,11 @@
                 "castle": {
                     "name": "Sipahi",
                     "description": "Cavalry Archers +20 hit points",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 150,
+                    "food_cost": 350,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 60
                 },
                 "imperial": {
                     "name": "Artillery",
@@ -1089,11 +1089,11 @@
                 "castle": {
                     "name": "Chatras",
                     "description": "Battle Elephants +50 hit points",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 250,
+                    "food_cost": 250,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Paper Money",
@@ -1120,11 +1120,11 @@
                 "castle": {
                     "name": "Chieftains",
                     "description": "Infantry get attack bonus against cavalry",
-                    "gold_cost": 0,
-                    "food_cost": 0,
+                    "gold_cost": 300,
+                    "food_cost": 400,
                     "stone_cost": 0,
                     "wood_cost": 0,
-                    "research_time": 0
+                    "research_time": 40
                 },
                 "imperial": {
                     "name": "Berserkergang",
