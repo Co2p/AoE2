@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AoE Civ Cheatsheet</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="build/css/main.min.css">
 </head>
 
-<body>
-    <nav class="navbar sticky-top navbar-light bg-light">
+<body class="bg-primary">
+    <nav class="navbar">
         <select class="form-control" id="pick-dropdown" href="#">
             <option value="civ">Civilization</option>
             <option value="spec">Specialities</option>
@@ -26,11 +24,9 @@
     </nav>
     <br />
     <div class="container">
-        <ol id="grid" class="list-group">
-            <li class="list-group-item">
-                <h1>Select something above</h1>
-            </li>
-        </ol>
+        <div id="grid">
+            <h1>Select something above</h1>
+        </div>
     </div>
     <br />
     <script src="./build/js/main.min.js?v1.3.1"></script>

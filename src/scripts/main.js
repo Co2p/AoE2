@@ -36,11 +36,11 @@ function emptyCivInfoHTML() {
  */
 function createCivInfoHTML(civData) {
     let g = document.getElementById("grid");
-    const headerSize = "h5"
+    const headerSize = "h2"
 
     let civDiv = document.createElement("div");
     civDiv.className = "civcontainer";
-    civDiv.appendChild(header(civData.name, "h1"));
+    civDiv.appendChild(createDivOfAllElementsInArray([header(civData.name, "h1")], "item"));
 
     const civInfoStruct = [];
 
@@ -55,7 +55,7 @@ function createCivInfoHTML(civData) {
     const uniqueUnitList = createUnorderedListFromArray(getDataFromArrayForIds(civData.UU, uniqueUnits).map(uniqueUnit => uniqueUnit.name));
     const castleUniqueTech = document.createTextNode(civData.technology.castle.description);
     const castleUniqueTechCost = createCostDiv(civData.technology.castle);
-    
+
     const imperialUniqueTech = document.createTextNode(civData.technology.imperial.description);
     const imperialUniqueTechCost = createCostDiv(civData.technology.imperial);
 
@@ -70,7 +70,7 @@ function createCivInfoHTML(civData) {
     civInfoStruct.push([civilizationBonusHeader, civilizationBonusList]);
 
     civInfoStruct.forEach((info) => {
-        civDiv.appendChild(createDivOfAllElementsInArray(info, "list-group-item"));
+        civDiv.appendChild(createDivOfAllElementsInArray(info, "item"));
     })
     g.appendChild(civDiv);
 }
@@ -112,8 +112,8 @@ function createCostDiv(cost) {
     const costList = [cost.gold_cost, cost.wood_cost, cost.stone_cost, cost.food_cost, cost.research_time];
     const resource = ["Gold", "Wood", "Stone", "Food", "seconds Research"];
     costList.forEach((c, i) => {
-        if (c !== 0){
-            const resourceDiv = createPill(`${c} ${resource[i]}`, `resource badge badge-pill ${resource[i].toLowerCase()}`);
+        if (c !== 0) {
+            const resourceDiv = createPill(`${c} ${resource[i]}`, `resource pill ${resource[i].toLowerCase()}`);
             parentDiv.appendChild(resourceDiv);
         }
     });
