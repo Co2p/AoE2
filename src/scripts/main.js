@@ -188,7 +188,7 @@ function createCivInfoHTMLUsingCivId(civId) {
 
 
 function formatTechnologyString(technologyAge) {
-    return `${technologyAge.name} (${technologyAge.description})`
+    return `${technologyAge.description}`
 }
 
 function civDropdown() {
