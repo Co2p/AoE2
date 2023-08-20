@@ -3,6 +3,7 @@
         {
             "id": -1,
             "name": "(Select Civ)",
+            "TeamBonus": "(Select Team Bonus)",
             "speciality": [],
             "technology": {
                 "castle": {

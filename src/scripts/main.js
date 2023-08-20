@@ -209,6 +209,34 @@ function techDropdown() {
     populateDropdown(techDropdown, sortDropdown(getAllTechnologies()));
 }
 
+function teamBonusDropdown() {
+    let teamBonusDropdown = document.getElementById("team-bonus-dropdown");
+    teamBonusDropdown.onchange = (event) => {
+        const civId = event.target.value;
+        createCivInfoHTMLUsingCivId(civId);
+    };
+    populateDropdown(teamBonusDropdown, sortDropdown(getAllTeamBonuses()));
+}
+
+function getAllTeamBonuses() {
+    let ddlItems = [];
+    civs.forEach(x => {
+        if (idIsDefined(x.id)) {
+            let castle = {};
+            castle.name = x.TeamBonus;
+            castle.id = x.id;
+            ddlItems.push(castle);
+        }
+        else {
+            const noSelectionElement = {};
+            noSelectionElement.name = x.TeamBonus;
+            noSelectionElement.id = x.id;
+            ddlItems.push(noSelectionElement);
+        }
+    });
+    return ddlItems;
+}
+
 function getAllTechnologies() {
     let ddlItems = [];
     civs.forEach(x => {
@@ -269,14 +297,19 @@ pickDropdown.onchange = (event) => {
     let specialitiesDropdown = document.getElementById("specialities-dropdown");
     let civDropdown = document.getElementById("civ-dropdown");
     let techDropdown = document.getElementById("tech-dropdown");
+    let teamBonusDropdown = document.getElementById("team-bonus-dropdown");
     specialitiesDropdown.hidden = event.target.value !== "spec";
     techDropdown.hidden = event.target.value !== "tech";
     civDropdown.hidden = event.target.value !== "civ";
+    teamBonusDropdown.hidden = event.target.value !== "team-bonus";
+
     specialitiesDropdown.value = -1;
     civDropdown.value = -1;
-    techDropdown.value = -1
+    techDropdown.value = -1;
+    teamBonusDropdown.value = -1;
 }
 
 specDropdown();
 civDropdown();
 techDropdown();
+teamBonusDropdown();
