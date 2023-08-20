@@ -1,12 +1,14 @@
 {
-    "uniqueUnits": [{
+    "uniqueUnits": [
+        {
             "name": "Jaguar Warior",
             "id": 0,
             "gold_cost": 30,
             "wood_cost": 0,
             "food_cost": 60,
             "stone_cost": 0,
-            "training_time": 17
+            "training_time": 17,
+            "type": ""
         },
         {
             "name": "Longbowman",
@@ -15,7 +17,8 @@
             "wood_cost": 35,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 18
+            "training_time": 18,
+            "type": ""
         },
         {
             "name": "Konnik",
@@ -24,7 +27,8 @@
             "wood_cost": 0,
             "food_cost": 60,
             "stone_cost": 0,
-            "training_time": 19
+            "training_time": 19,
+            "type": ""
         },
         {
             "name": "Camel Archer",
@@ -33,7 +37,8 @@
             "wood_cost": 50,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 25
+            "training_time": 25,
+            "type": ""
         },
         {
             "name": "Arambai",
@@ -42,7 +47,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Cataphract",
@@ -51,7 +57,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Woad Raider",
@@ -60,7 +67,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Chu Ko Nu",
@@ -69,7 +77,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Kipchak",
@@ -78,7 +87,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Shotel Warrior",
@@ -87,7 +97,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Throwing Axeman",
@@ -96,7 +107,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Genitour",
@@ -105,7 +117,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Huskarl",
@@ -114,7 +127,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Tarkan",
@@ -123,7 +137,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Kamayuk",
@@ -132,7 +147,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Slinger",
@@ -141,7 +157,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Elephant Archer",
@@ -150,7 +167,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Imperial Camel Rider",
@@ -159,7 +177,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Genoese Crossbowman",
@@ -168,7 +187,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Condottiero",
@@ -177,7 +197,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Samurai",
@@ -186,7 +207,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Ballista Elephant",
@@ -195,7 +217,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "War Wagon",
@@ -204,7 +227,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Turtle Ship",
@@ -213,7 +237,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Leitis",
@@ -222,7 +247,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Magyar Huszar",
@@ -231,7 +257,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Karambit Warrior",
@@ -240,7 +267,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Gbeto",
@@ -249,7 +277,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Plumed Archer",
@@ -258,7 +287,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Mangudai",
@@ -267,7 +297,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "War Elephant",
@@ -276,7 +307,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Organ Gun",
@@ -285,7 +317,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Caravel",
@@ -294,7 +327,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Mameluke",
@@ -303,7 +337,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Boyar",
@@ -312,7 +347,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Conquistador",
@@ -321,7 +357,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Missionary",
@@ -330,7 +367,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Keshik",
@@ -339,7 +377,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Flaming Camel",
@@ -348,7 +387,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Teutonic Knight",
@@ -357,7 +397,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Janissary",
@@ -366,7 +407,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Rattan Archer",
@@ -375,7 +417,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Imperial Skirmisher",
@@ -384,7 +427,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Berserk",
@@ -393,7 +437,8 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
         },
         {
             "name": "Longboat",
@@ -402,7 +447,178 @@
             "wood_cost": 0,
             "food_cost": 0,
             "stone_cost": 0,
-            "training_time": 0
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Ratha",
+            "id": 45,
+            "gold_cost": 60,
+            "wood_cost": 60,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Elite Ratha",
+            "id": 46,
+            "gold_cost": 60,
+            "wood_cost": 60,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Hussite Wagon",
+            "id": 47,
+            "gold_cost": 70,
+            "wood_cost": 110,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Houfnice",
+            "id": 48,
+            "gold_cost": 225,
+            "wood_cost": 225,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Coustillier",
+            "id": 49,
+            "gold_cost": 55,
+            "wood_cost": 0,
+            "food_cost": 55,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Flemish Militia",
+            "id": 50,
+            "gold_cost": 15,
+            "wood_cost": 0,
+            "food_cost": 50,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Urumi Swordsman",
+            "id": 51,
+            "gold_cost": 20,
+            "wood_cost": 0,
+            "food_cost": 65,
+            "stone_cost": 0,
+            "training_time": 9,
+            "type": ""
+        },
+        {
+            "name": "Thirisadai",
+            "id": 52,
+            "gold_cost": 60,
+            "wood_cost": 180,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 9,
+            "type": ""
+        },
+        {
+            "name": "Chakram Thrower",
+            "id": 53,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Shrivamsha Rider",
+            "id": 54,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Camel Scout",
+            "id": 55,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Ghulam",
+            "id": 56,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 0,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Obuch",
+            "id": 57,
+            "gold_cost": 20,
+            "wood_cost": 0,
+            "food_cost": 55,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Winged Hussar",
+            "id": 58,
+            "gold_cost": 0,
+            "wood_cost": 0,
+            "food_cost": 80,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Centurion",
+            "id": 59,
+            "gold_cost": 85,
+            "wood_cost": 0,
+            "food_cost": 75,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Legionary",
+            "id": 60,
+            "gold_cost": 20,
+            "wood_cost": 0,
+            "food_cost": 60,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
+        },
+        {
+            "name": "Serjeant",
+            "id": 61,
+            "gold_cost": 20,
+            "wood_cost": 0,
+            "food_cost": 60,
+            "stone_cost": 0,
+            "training_time": 0,
+            "type": ""
         }
     ]
 }

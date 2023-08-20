@@ -28,14 +28,21 @@
         {
             "id": 0,
             "name": "Aztecs",
-            "speciality": [8, 9],
-            "UU": [0],
+            "speciality": [
+                8,
+                9
+            ],
+            "UU": [
+                0
+            ],
             "TeamBonus": "Relics generate 33% more gold",
-            "CivBonus": ["Start the game with an Eagle Scout",
-                "Villagers carry +5 extra resources",
-                "All military units are created 18% faster",
-                "Monks gain 5 HP for every researched Monastery technology",
-                "Start with +50 gold"],
+            "CivBonus": [
+                "Start the game with Eagle Scout",
+                "Villagers carry +3 extra resources",
+                "Military units are created 11% faster",
+                "Monks gain 5 HP for every Monastery technology",
+                "Start with +50 gold"
+            ],
             "technology": {
                 "castle": {
                     "name": "Atlatl",
@@ -59,14 +66,63 @@
             "Wonder": "Great Pyramid of Tenochtitlan"
         },
         {
+            "id": 35,
+            "name": "Bengalis",
+            "speciality": [
+                5,
+                10
+            ],
+            "UU": [
+                45,
+                46
+            ],
+            "TeamBonus": "Trade units yield 10% food in addition to gold",
+            "CivBonus": [
+                "Elephant units receive 25% less bonus damage and are resistant to conversion",
+                "Town centers spawn 2 villagers in each new age",
+                "Cavalry +2 attack vs Skirmishers",
+                "Ships regenerate 15hp per minute",
+                "Monks +3/+3P armor"
+            ],
+            "technology": {
+                "castle": {
+                    "name": "Paiks",
+                    "description": "Rathas and elephant units attack 20% faster",
+                    "gold_cost": 275,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 375,
+                    "research_time": 45
+                },
+                "imperial": {
+                    "name": "Mahayana",
+                    "description": "Villagers and Monks take 10% less population space",
+                    "gold_cost": 650,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 800,
+                    "research_time": 60
+                }
+            },
+            "Wonder": ""
+        },
+        {
             "id": 1,
             "name": "Berbers",
-            "speciality": [2, 10],
-            "UU": [3, 11],
-            "TeamBonus": "Genitours are available at the Archery Range",
-            "CivBonus": ["Villagers move +10% faster",
-                "Stable units are 15%/20% cheaper in the Castle/Imperial Age",
-                "Ships move +10% faster"],
+            "speciality": [
+                2,
+                10
+            ],
+            "UU": [
+                3,
+                11
+            ],
+            "TeamBonus": "Genitour available in the Archery Range starting in the Castle Age",
+            "CivBonus": [
+                "Villagers move +5% faster",
+                "Stable units cost 15%/20% less in the Castle/Imperial Age",
+                "Ships move +10% faster"
+            ],
             "technology": {
                 "castle": {
                     "name": "Kasbah",
@@ -90,14 +146,61 @@
             "Wonder": "Hassan Tower"
         },
         {
+            "id": 36,
+            "name": "Bohemians",
+            "speciality": [
+                7,
+                9
+            ],
+            "UU": [
+                47,
+                48
+            ],
+            "TeamBonus": "Markets work 80% faster",
+            "CivBonus": [
+                "Blacksmiths and Universities cost -100 wood",
+                "Chemistry and Hand Cannoneer available in Castle Age",
+                "Spearman-line deals +25% bonus damage",
+                "Fervor and Sanctity affect Villagers",
+                "Mining Camp technologies free"
+            ],
+            "technology": {
+                "castle": {
+                    "name": "Wagenburg Tactics",
+                    "description": "Gunpowder units move 15% faster",
+                    "gold_cost": 300,
+                    "food_cost": 300,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 45
+                },
+                "imperial": {
+                    "name": "Hussite Reforms",
+                    "description": "Monks and Monastery technologies have their gold cost replaced by food",
+                    "gold_cost": 450,
+                    "food_cost": 500,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 45
+                }
+            },
+            "Wonder": ""
+        },
+        {
             "id": 2,
             "name": "Britons",
-            "speciality": [6],
-            "UU": [1],
-            "TeamBonus": "Archery Ranges work 20% faster",
-            "CivBonus": ["Town Centers cost -50% wood starting in the Castle Age",
+            "speciality": [
+                6
+            ],
+            "UU": [
+                1
+            ],
+            "TeamBonus": "Archery Ranges work 10% faster",
+            "CivBonus": [
+                "Town Centers cost -50% wood starting in the Castle Age",
                 "Foot archers (except Skirmishers) have +1/+2 range in the Castle/Imperial Age",
-                "Shepherds work 25% faster"],
+                "Shepherds work 25% faster"
+            ],
             "technology": {
                 "castle": {
                     "name": "Yeomen",
@@ -123,12 +226,20 @@
         {
             "id": 3,
             "name": "Bulgarians",
-            "speciality": [2, 8],
-            "UU": [2],
-            "TeamBonus": "Blacksmiths work 50% faster",
-            "CivBonus": ["Militia units are upgraded for free",
+            "speciality": [
+                2,
+                8
+            ],
+            "UU": [
+                2
+            ],
+            "TeamBonus": "Blacksmiths work 80% faster",
+            "CivBonus": [
+                "Militia units are upgraded free",
                 "Town Centers cost -50% stone",
-                "Can build Krepost"],
+                "Blacksmith and Siege Workshop technologies cost -50% food",
+                "Krepost available in Castle Age"
+            ],
             "technology": {
                 "castle": {
                     "name": "Stirrups",
@@ -152,30 +263,77 @@
             "Wonder": "Preslav Round Church"
         },
         {
-            "id": 4,
-            "name": "Burmese",
-            "speciality": [5, 9],
-            "UU": [4],
-            "TeamBonus": "Relics are visible on the map from the game start",
-            "CivBonus": ["Lumber Camp technologies are free",
-                "Infantry has +1/+2/+3 attack in the Feudal/Castle/Imperial Age",
-                "Monastery technologies are 50% cheaper"],
+            "id": 37,
+            "name": "Burgundians",
+            "speciality": [
+                2
+            ],
+            "UU": [
+                49,
+                50
+            ],
+            "TeamBonus": "Relics generate both Gold & Food",
+            "CivBonus": [
+                "Economic upgrades available one age earlier and cost -33% food",
+                "Stable technologies cost -50%",
+                "Cavalier upgrade available in Castle Age",
+                "Gunpowder units +25% attack"
+            ],
             "technology": {
                 "castle": {
-                    "name": "Howdah",
-                    "description": "Battle Elephants +1/+1 armor",
-                    "gold_cost": 0,
+                    "name": "Burgundian Vineyards",
+                    "description": "Farmers slowly generate gold in addition to food",
+                    "gold_cost": 300,
                     "food_cost": 400,
-                    "stone_cost": 300,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 45
+                },
+                "imperial": {
+                    "name": "Flemish Revolution",
+                    "description": "Villagers that exist are upgraded to Flemish Militia; create Flemish Militia at Barracks",
+                    "gold_cost": 150,
+                    "food_cost": 200,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 10
+                }
+            },
+            "Wonder": "Preslav Round Church"
+        },
+        {
+            "id": 4,
+            "name": "Burmese",
+            "speciality": [
+                5,
+                9
+            ],
+            "UU": [
+                4
+            ],
+            "TeamBonus": "Relics are visible on the map from the game start",
+            "CivBonus": [
+                "Lumber Camp technologies free",
+                "Infantry has +1/+2/+3 attack in the Feudal/Castle/Imperial Age",
+                "Battle Elephants +1/+1P armor",
+                "Monastery technologies are cost 50% less"
+            ],
+            "technology": {
+                "castle": {
+                    "name": "Manipur Cavalry",
+                    "description": "Cavalry and Arambai +4 attack against archers",
+                    "gold_cost": 400,
+                    "food_cost": 650,
+                    "stone_cost": 0,
                     "wood_cost": 0,
                     "research_time": 40
                 },
                 "imperial": {
-                    "name": "Manipur Cavalry",
-                    "description": "Cavalry and Arambai +3 attack against buildings",
-                    "gold_cost": 400,
-                    "food_cost": 650,
-                    "stone_cost": 0,
+                    "name": "Howdah",
+                    "description": "Battle Elephants +1/+1P armor",
+                    "gold_cost": 0,
+                    "food_cost": 400,
+                    "stone_cost": 300,
                     "wood_cost": 0,
                     "research_time": 40
                 }
@@ -185,18 +343,24 @@
         {
             "id": 5,
             "name": "Byzantines",
-            "speciality": [4],
-            "UU": [5],
-            "TeamBonus": "Monks heal 50% faster",
-            "CivBonus": ["Buildings have +10%/+20%/+30%/+40% HP in the Dark/Feudal/Castle/Imperial Age",
-                "Camel Riders, Skirmishers and Spearmen are 25% cheaper",
-                "Fire Ships fire 25% faster",
-                "Advancing to the Imperial Age is 33% cheaper",
-                "Town Watch is free"],
+            "speciality": [
+                4
+            ],
+            "UU": [
+                5
+            ],
+            "TeamBonus": "Monks heal 100% faster",
+            "CivBonus": [
+                "Buildings have +10%/+20%/+30%/+40% HP in the Dark/Feudal/Castle/Imperial Age",
+                "Camel Riders, Skirmishers and Spearmen cost -25%",
+                "Fire Ships and Dromons attack 25% faster",
+                "Imperial Age costs -33%",
+                "Town Watch, Town Patrol free"
+            ],
             "technology": {
                 "castle": {
                     "name": "Greek Fire",
-                    "description": "Fire Ships +1 range",
+                    "description": "Fire Ships +1 range; Dromon and Bombard Tower blast radius increased",
                     "gold_cost": 300,
                     "food_cost": 250,
                     "stone_cost": 0,
@@ -205,7 +369,7 @@
                 },
                 "imperial": {
                     "name": "Logistica",
-                    "description": "Cataphracts deal trample damage",
+                    "description": "Cataphracts cause trample damage",
                     "gold_cost": 600,
                     "food_cost": 800,
                     "stone_cost": 0,
@@ -218,17 +382,24 @@
         {
             "id": 6,
             "name": "Celts",
-            "speciality": [8, 11],
-            "UU": [6],
+            "speciality": [
+                8,
+                11
+            ],
+            "UU": [
+                6
+            ],
             "TeamBonus": "Siege Workshops work 20% faster",
-            "CivBonus": ["Infantry units move 15% faster",
+            "CivBonus": [
+                "Infantry units move 15% faster (starting in the Feudal Age)",
                 "Lumberjacks work 15% faster",
                 "Siege weapons fire 25% faster",
-                "Enemy herdables can be converted regardless of enemy units next to them"],
+                "Can steal sheep, and sheep within one Celt unit's LoS cannot be stolen"
+            ],
             "technology": {
                 "castle": {
                     "name": "Stronghold",
-                    "description": "Castles and towers fire 25% faster",
+                    "description": "Castles and towers fire 33% faster; Castles heal allied infantry in a 7 tile radius",
                     "gold_cost": 200,
                     "food_cost": 250,
                     "stone_cost": 0,
@@ -250,13 +421,19 @@
         {
             "id": 7,
             "name": "Chinese",
-            "speciality": [0],
-            "UU": [7],
-            "TeamBonus": "Farms provide +45 food",
-            "CivBonus": ["Start game with three extra Villagers, but with -200 food and -50 wood",
-                "Town Centers support ten population (instead of five) and have +5 Line of Sight",
-                "Technologies are 10%/15%/20% cheaper in the Feudal/Castle/Imperial Age",
-                "Demolition Ships have +50% HP"],
+            "speciality": [
+                0
+            ],
+            "UU": [
+                7
+            ],
+            "TeamBonus": "Farms +10% food",
+            "CivBonus": [
+                "Start with +3 villagers, -50 wood, -200 food",
+                "Town Centers support 10 population and +5 LOS",
+                "Technologies cost 10%/15%/20% less in the Feudal/Castle/Imperial Age",
+                "Demolition Ships have +50% HP"
+            ],
             "technology": {
                 "castle": {
                     "name": "Great Wall",
@@ -282,16 +459,23 @@
         {
             "id": 8,
             "name": "Cumans",
-            "speciality": [2],
-            "UU": [8],
-            "TeamBonus": "Palisade Walls have +50% HP",
-            "CivBonus": ["Can build an additional Town Center in the Feudal Age",
-                "Siege Workshop and Battering Ram available in the Feudal Age",
-                "Cavalry moves 5%/10%/15% faster in the Feudal/Castle/Imperial Age"],
+            "speciality": [
+                2
+            ],
+            "UU": [
+                8
+            ],
+            "TeamBonus": "Palisade Walls have +33% HP",
+            "CivBonus": [
+                "Town Center; Additional can be built in the Feudal Age",
+                "Siege Workshop and Battering Ram available in the Feudal Age; Capped Ram upgrade available in Castle Age",
+                "Archery Ranges and Stables cost -75 wood",
+                "Cavalry moves 5%/10%/15% faster in the Feudal/Castle/Imperial Age"
+            ],
             "technology": {
                 "castle": {
                     "name": "Steppe Husbandry",
-                    "description": "Scout Cavalry, Steppe Lancers and Cavalry Archers are trained 50% faster",
+                    "description": "Light Cavalry, Steppe Lancers and Cavalry Archers trained 100% faster",
                     "gold_cost": 0,
                     "food_cost": 200,
                     "stone_cost": 0,
@@ -300,7 +484,7 @@
                 },
                 "imperial": {
                     "name": "Cuman Mercenaries",
-                    "description": "Team members can create 10 free Elite Kipchaks at the Castle",
+                    "description": "Team members can create 5 free Elite Kipchaks per Castle",
                     "gold_cost": 400,
                     "food_cost": 650,
                     "stone_cost": 0,
@@ -311,18 +495,66 @@
             "Wonder": "Sarkel Fortress"
         },
         {
+            "id": 38,
+            "name": "Dravidians",
+            "speciality": [
+                8,
+                10
+            ],
+            "UU": [
+                51,
+                52
+            ],
+            "TeamBonus": "Docks provide +5 population room",
+            "CivBonus": [
+                "Receive +200 wood when advancing to the next age",
+                "Fishermen and Fishing Ships carry +15",
+                "Barracks technologies cost -50%",
+                "Siege weapons cost -33% wood",
+                "Skirmishers and Elephant Archers attack 25% faster"
+            ],
+            "technology": {
+                "castle": {
+                    "name": "Medical Corps",
+                    "description": "Elephant units regenerate 30 HP per minute",
+                    "gold_cost": 200,
+                    "food_cost": 300,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 40
+                },
+                "imperial": {
+                    "name": "Wootz Steel",
+                    "description": "Infantry and cavalry attacks ignore armor",
+                    "gold_cost": 600,
+                    "food_cost": 750,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 40
+                }
+            },
+            "Wonder": ""
+        },
+        {
             "id": 9,
             "name": "Ethiopians",
-            "speciality": [0, 11],
-            "UU": [9],
+            "speciality": [
+                0,
+                11
+            ],
+            "UU": [
+                9
+            ],
             "TeamBonus": "Towers and Outposts have +3 Line of Sight",
-            "CivBonus": ["Archers fire 15% faster",
-                "Receive +100 food and +100 gold whenever a new Age is reached",
-                "The Pikeman upgrade is free"],
+            "CivBonus": [
+                "Archers fire 18% faster",
+                "Receive +100 gold, +100 food when advancing to the next age",
+                "Pikeman upgrade free"
+            ],
             "technology": {
                 "castle": {
                     "name": "Royal Heirs",
-                    "description": "Shotel Warrior trains twice as fast",
+                    "description": "Shotel Warriors and Camel units receive -3 damage from mounted units",
                     "gold_cost": 300,
                     "food_cost": 300,
                     "stone_cost": 0,
@@ -331,7 +563,7 @@
                 },
                 "imperial": {
                     "name": "Torsion Engines",
-                    "description": "Siege Workshop units' blast radius increased",
+                    "description": "Siege Workshop units increased blast radius",
                     "gold_cost": 600,
                     "food_cost": 1000,
                     "stone_cost": 0,
@@ -344,24 +576,21 @@
         {
             "id": 10,
             "name": "Franks",
-            "speciality": [2],
-            "UU": [10],
+            "speciality": [
+                2
+            ],
+            "UU": [
+                10
+            ],
             "TeamBonus": "Knights have +2 Line of Sight",
-            "CivBonus": ["Farm upgrades are free",
-                "Castles are 25% cheaper",
+            "CivBonus": [
+                "Castles cost -25%",
                 "Cavalry have +20% HP",
-                "Foragers work 25% faster"],
+                "Mill technologies free",
+                "Foragers work 25% faster"
+            ],
             "technology": {
                 "castle": {
-                    "name": "Chivalry",
-                    "description": "Stables work 40% faster",
-                    "gold_cost": 400,
-                    "food_cost": 400,
-                    "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 40
-                },
-                "imperial": {
                     "name": "Bearded Axe",
                     "description": "Throwing Axeman +1 range",
                     "gold_cost": 400,
@@ -369,6 +598,15 @@
                     "stone_cost": 0,
                     "wood_cost": 0,
                     "research_time": 60
+                },
+                "imperial": {
+                    "name": "Chivalry",
+                    "description": "Stables work 40% faster",
+                    "gold_cost": 400,
+                    "food_cost": 400,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 40
                 }
             },
             "Wonder": "St. Vitus Cathedral"
@@ -376,14 +614,20 @@
         {
             "id": 11,
             "name": "Goths",
-            "speciality": [8],
-            "UU": [12],
+            "speciality": [
+                8
+            ],
+            "UU": [
+                12
+            ],
             "TeamBonus": "Barracks work 20% faster",
-            "CivBonus": ["Infantry are 20%/25%/30%/35% cheaper in the Dark/Feudal/Castle/Imperial Age",
+            "CivBonus": [
+                "Infantry cost 20%/25%/30%/35% less in the Dark/Feudal/Castle/Imperial Age",
                 "Infantry have +1/+2/+3 attack bonus against standard buildings in the Feudal/Castle/Imperial Age",
                 "Villagers have +5 attack against Wild Boars and carry +15 food from hunting",
                 "+10 population cap in the Imperial Age",
-                "Loom is free"],
+                "Loom is free"
+            ],
             "technology": {
                 "castle": {
                     "name": "Anarchy",
@@ -396,7 +640,7 @@
                 },
                 "imperial": {
                     "name": "Perfusion",
-                    "description": "Barracks create units 100% faster",
+                    "description": "Barracks work 100% faster",
                     "gold_cost": 600,
                     "food_cost": 0,
                     "stone_cost": 0,
@@ -407,14 +651,101 @@
             "Wonder": "Mausoleum of Theoderic I"
         },
         {
+            "id": 39,
+            "name": "Gurjaras",
+            "speciality": [
+                2,
+                1
+            ],
+            "UU": [
+                53,
+                54,
+                55
+            ],
+            "TeamBonus": "Camel and elephant units created 25% faster",
+            "CivBonus": [
+                "Start with 2 Forage Bushes",
+                "Mills can garrison livestock to produce food",
+                "Mounted units deal +20%/+30%/+40% bonus damage in Feudal/Castle/Imperial Age",
+                "Docks can garrison Fishing Ships"
+            ],
+            "technology": {
+                "castle": {
+                    "name": "Kshatriyas",
+                    "description": "Military units cost -25% food",
+                    "gold_cost": 450,
+                    "food_cost": 500,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 45
+                },
+                "imperial": {
+                    "name": "Frontier Guards",
+                    "description": "Camel Riders and Elephant Archers +4 melee armor",
+                    "gold_cost": 700,
+                    "food_cost": 800,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 60
+                }
+            },
+            "Wonder": "Mausoleum of Theoderic I"
+        },
+        {
+            "id": 40,
+            "name": "Hindustanis",
+            "speciality": [
+                7,
+                1
+            ],
+            "UU": [
+                17,
+                56
+            ],
+            "TeamBonus": "Camel and light cavalry units +2 attack vs buildings",
+            "CivBonus": [
+                "Villagers cost -5%/-10%/-15%/-20% in Dark/Feudal/Castle/Imperial Age",
+                "Camel Riders attack 20% faster",
+                "Gunpowder units +1/+1P armor",
+                "Caravanserai availabe to build in Imperial Age"
+            ],
+            "technology": {
+                "castle": {
+                    "name": "Grand Trunk Road",
+                    "description": "All gold income 10% faster; trading fee reduced to 10%",
+                    "gold_cost": 0,
+                    "food_cost": 250,
+                    "stone_cost": 0,
+                    "wood_cost": 200,
+                    "research_time": 40
+                },
+                "imperial": {
+                    "name": "Frontier Guards",
+                    "description": "Camel Riders and Elephant Archers +4 melee armor",
+                    "gold_cost": 300,
+                    "food_cost": 500,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 40
+                }
+            },
+            "Wonder": ""
+        },
+        {
             "id": 12,
             "name": "Huns",
-            "speciality": [2],
-            "UU": [13],
+            "speciality": [
+                2
+            ],
+            "UU": [
+                13
+            ],
             "TeamBonus": "Stables work 20% faster",
-            "CivBonus": ["Start the game with -100 wood, but with the population cap at the maximum",
-                "Cavalry Archers are 10%/20% cheaper in the Castle/Imperial Age",
-                "Trebuchets have +30% accuracy"],
+            "CivBonus": [
+                "Start the game with -100 wood, but with the population cap at the maximum",
+                "Cavalry Archers cost 10%/20% less in the Castle/Imperial Age",
+                "Trebuchets have +30% accuracy"
+            ],
             "technology": {
                 "castle": {
                     "name": "Marauders",
@@ -428,10 +759,10 @@
                 "imperial": {
                     "name": "Atheism",
                     "description": "+100 years for Relic/Wonder victories, Spies/Treason cost -50%",
-                    "gold_cost": 500,
+                    "gold_cost": 0,
                     "food_cost": 500,
                     "stone_cost": 0,
-                    "wood_cost": 0,
+                    "wood_cost": 300,
                     "research_time": 60
                 }
             },
@@ -440,18 +771,24 @@
         {
             "id": 13,
             "name": "Incas",
-            "speciality": [8],
-            "UU": [14, 15],
-            "TeamBonus": "Farms are built 100% faster",
-            "CivBonus": ["Start the game with an Eagle Scout",
-                "Start with a free Llama",
+            "speciality": [
+                8
+            ],
+            "UU": [
+                14,
+                15
+            ],
+            "TeamBonus": "Start with a free Llama",
+            "CivBonus": [
+                "Military units food cost -15%/-20%/-25%/-30% in Dark/Feudal/Castle/Imperial Age",
                 "Villagers benefit from Blacksmith infantry upgrades",
                 "Houses support 10 population",
-                "Buildings cost -15% stone"],
+                "Buildings cost -15% stone"
+            ],
             "technology": {
                 "castle": {
                     "name": "Andean Sling",
-                    "description": "Slingers and Skirmisher have no minimum range",
+                    "description": "Slingers and Skirmisher have no minimum range; Slingers +1 attack",
                     "gold_cost": 300,
                     "food_cost": 200,
                     "stone_cost": 0,
@@ -471,54 +808,31 @@
             "Wonder": "Temple of the Sun at Macchu Picchu"
         },
         {
-            "id": 14,
-            "name": "Indians",
-            "speciality": [1, 7],
-            "UU": [16, 17],
-            "TeamBonus": "Camels have +6 attack against buildings",
-            "CivBonus": ["Fishermen work 10% faster",
-                "Villagers are 10%/15%/20%/25% cheaper in the Dark/Feudal/Castle/Imperial Age",
-                "Camel Riders have +1 pierce armor"],
-            "technology": {
-                "castle": {
-                    "name": "Sultans",
-                    "description": "All gold production +10% faster",
-                    "gold_cost": 0,
-                    "food_cost": 400,
-                    "stone_cost": 0,
-                    "wood_cost": 400,
-                    "research_time": 40
-                },
-                "imperial": {
-                    "name": "Shatagni",
-                    "description": "Hand Cannoneers +1 range",
-                    "gold_cost": 300,
-                    "food_cost": 500,
-                    "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 40
-                }
-            },
-            "Wonder": "Brihadeeswarar Temple"
-        },
-        {
             "id": 15,
             "name": "Italians",
-            "speciality": [0, 10],
-            "UU": [18, 19],
-            "TeamBonus": "Condottieri are available at the Barracks in Imp",
-            "CivBonus": ["Advancing to the next Age is 15% cheaper",
-                "Dock technologies are 50% cheaper",
-                "Fishing Ships are 20% cheaper",
-                "Gunpowder units are 20% cheaper"],
+            "speciality": [
+                0,
+                10
+            ],
+            "UU": [
+                18,
+                19
+            ],
+            "TeamBonus": "Condottieri are available at the Barracks in Imperial Age",
+            "CivBonus": [
+                "Advancing to the next Age costs -15%",
+                "Dock and University technologies cost -33%",
+                "Fishing Ships cost -15%",
+                "Gunpowder units cost -20%"
+            ],
             "technology": {
                 "castle": {
                     "name": "Pavise",
                     "description": "Foot archers and Condottieri +1/+1 armor",
                     "gold_cost": 150,
-                    "food_cost": 300,
+                    "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
+                    "wood_cost": 200,
                     "research_time": 40
                 },
                 "imperial": {
@@ -536,12 +850,18 @@
         {
             "id": 16,
             "name": "Japanese",
-            "speciality": [8],
-            "UU": [20],
+            "speciality": [
+                8
+            ],
+            "UU": [
+                20
+            ],
             "TeamBonus": "Galleys have +50% Line of Sight",
-            "CivBonus": ["Fishing Ships have double HP, +2 pierce armor, and work 5%/10%/15%/20% faster in the Dark/Feudal/Castle/Imperial Age",
-                "Mills, Lumber Camps and Mining Camps are 50% cheaper",
-                "Infantry attack 33% faster starting in the Feudal Age"],
+            "CivBonus": [
+                "Fishing Ships have 2x HP, +2 pierce armor, and work 5%/10%/15%/20% faster in the Dark/Feudal/Castle/Imperial Age",
+                "Mills, Lumber and Mining Camps costs -50%",
+                "Infantry attack 33% faster starting in the Feudal Age"
+            ],
             "technology": {
                 "castle": {
                     "name": "Yasama",
@@ -554,11 +874,11 @@
                 },
                 "imperial": {
                     "name": "Kataparuto",
-                    "description": "Trebuchets fire and pack faster",
-                    "gold_cost": 400,
+                    "description": "Trebuchets fire 33% and pack 4X faster",
+                    "gold_cost": 300,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 750,
+                    "wood_cost": 550,
                     "research_time": 60
                 }
             },
@@ -567,22 +887,28 @@
         {
             "id": 17,
             "name": "Khmer",
-            "speciality": [5, 11],
-            "UU": [21],
+            "speciality": [
+                5,
+                11
+            ],
+            "UU": [
+                21
+            ],
             "TeamBonus": "Scorpions have +1 range",
-            "CivBonus": ["No buildings are required to construct certain buildings or advance in Age",
-                "Battle Elephants move +15% faster",
+            "CivBonus": [
+                "No buildings required to advance to the next age or to unlock other buildings",
+                "Battle Elephants move +10% faster",
                 "Khmer Villagers drop off food from farms (1 unit at a time) without needing a drop site",
-                "Villagers can garrison in Houses"],
-
+                "Villagers can garrison in Houses"
+            ],
             "technology": {
                 "castle": {
                     "name": "Tusk Swords",
                     "description": "Battle Elephants +3 attack",
-                    "gold_cost": 300,
+                    "gold_cost": 450,
                     "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 200,
+                    "wood_cost": 300,
                     "research_time": 40
                 },
                 "imperial": {
@@ -600,19 +926,26 @@
         {
             "id": 18,
             "name": "Koreans",
-            "speciality": [10, 12],
-            "UU": [22, 23],
+            "speciality": [
+                10,
+                12
+            ],
+            "UU": [
+                22,
+                23
+            ],
             "TeamBonus": "Mangonels minimum range reduced to 1",
-            "CivBonus": ["Villagers have +3 Line of Sight",
+            "CivBonus": [
+                "Villagers have +3 Line of Sight",
                 "Stone Miners work 20% faster",
                 "Tower upgrades are free (Bombard Tower requires Chemistry)",
-                "Towers (except Bombard Towers) have +1/+2 range in the Castle/Imperial Age",
-                "Fortifications are built 33% faster",
-                "Military units Cost -20% less wood (except siege weapons)"],
+                "Archers and Infantry cost -50% wood",
+                "Warships cost -20% wood"
+            ],
             "technology": {
                 "castle": {
-                    "name": "Panokseon",
-                    "description": "Turtle Ships move 15% faster",
+                    "name": "Eupseong",
+                    "description": "Watch Towers, Guard Towers and Keeps +2 range",
                     "gold_cost": 0,
                     "food_cost": 300,
                     "stone_cost": 0,
@@ -634,12 +967,19 @@
         {
             "id": 19,
             "name": "Lithuanians",
-            "speciality": [2, 9],
-            "UU": [24],
+            "speciality": [
+                2,
+                9
+            ],
+            "UU": [
+                24
+            ],
             "TeamBonus": "Monasteries work 20% faster",
-            "CivBonus": ["Start with +150 food",
+            "CivBonus": [
+                "Each Town Center provides 100 food",
                 "Spearmen and Skirmishers move 10% faster",
-                "Each garrisoned Relic gives +1 attack to Knights and Leitis (maximum +4)"],
+                "Each garrisoned Relic gives +1 attack to Knights and Leitis (maximum +4)"
+            ],
             "technology": {
                 "castle": {
                     "name": "Hill Forts",
@@ -665,12 +1005,18 @@
         {
             "id": 20,
             "name": "Magyars",
-            "speciality": [2],
-            "UU": [25],
-            "TeamBonus": "All foot archers have +2 Line of Sight",
-            "CivBonus": ["Forging, Iron Casting, and Blast Furnace are free",
-                "Scout Cavalry is 15% cheaper",
-                "Villagers kill wild animals in one strike"],
+            "speciality": [
+                2
+            ],
+            "UU": [
+                25
+            ],
+            "TeamBonus": "Cavalry Archers created 25% faster",
+            "CivBonus": [
+                "Forging, Iron Casting, and Blast Furnace are free",
+                "Scout Cavalry costs -15%",
+                "Villagers kill wild animals in one strike"
+            ],
             "technology": {
                 "castle": {
                     "name": "Corvinian Army",
@@ -696,17 +1042,23 @@
         {
             "id": 21,
             "name": "Malay",
-            "speciality": [10],
-            "UU": [26],
+            "speciality": [
+                10
+            ],
+            "UU": [
+                26
+            ],
             "TeamBonus": "Docks and Harbors have +100% Line of Sight",
-            "CivBonus": ["Advancing in Age is +80% faster",
-                "Fish Traps are 33% cheaper",
-                "Fish Traps provide unlimited food",
-                "Battle Elephants are 30% cheaper"],
+            "CivBonus": [
+                "Advancing in Age is 66% faster",
+                "Fish Traps cost -33% and provide 3X food",
+                "Battle Elephants cost -30%/-40% in Castle/Imperial Age",
+                "Infantry armor upgrades free"
+            ],
             "technology": {
                 "castle": {
                     "name": "Thalassocracy",
-                    "description": "Upgrades Docks to Harbors, which shoot arrows",
+                    "description": "Docks upgrade to Harbors, which shoot arrows",
                     "gold_cost": 300,
                     "food_cost": 300,
                     "stone_cost": 0,
@@ -715,7 +1067,7 @@
                 },
                 "imperial": {
                     "name": "Forced Levy",
-                    "description": "Turns Militia gold cost to food cost",
+                    "description": "Turns Militia gold cost becomes food cost",
                     "gold_cost": 500,
                     "food_cost": 850,
                     "stone_cost": 0,
@@ -728,12 +1080,18 @@
         {
             "id": 22,
             "name": "Malians",
-            "speciality": [8],
-            "UU": [27],
+            "speciality": [
+                8
+            ],
+            "UU": [
+                27
+            ],
             "TeamBonus": "University researches 80% faster",
-            "CivBonus": ["Buildings cost -15% wood (except Farms)",
+            "CivBonus": [
+                "Buildings cost -15% wood (except Farms)",
                 "Barracks units have +1/+2/+3 pierce armor in the Feudal/Castle/Imperial Age",
-                "Gold Mining is free"],
+                "Villagers drop off 10% more gold"
+            ],
             "technology": {
                 "castle": {
                     "name": "Tigui",
@@ -759,17 +1117,22 @@
         {
             "id": 23,
             "name": "Mayans",
-            "speciality": [0],
-            "UU": [28],
-            "TeamBonus": "Walls and Gates are 50% cheaper",
-            "CivBonus": ["Start the game with an Eagle Scout",
-                "Start the game with +1 Villager, but with -50 food",
+            "speciality": [
+                0
+            ],
+            "UU": [
+                28
+            ],
+            "TeamBonus": "Walls and Gates cost -50%",
+            "CivBonus": [
+                "Start the game with +1 Villager, and -50 food",
                 "Resources last 15% longer",
-                "Foot archers are 10%/20%/30% cheaper in the Feudal/Castle/Imperial Age"],
+                "Foot archers cost -10%/-20%/-30% in the Feudal/Castle/Imperial Age"
+            ],
             "technology": {
                 "castle": {
-                    "name": "Obsidian Arrows",
-                    "description": "Archers have +6 attack against buildings and stone defense",
+                    "name": "Hul'che Javelineers",
+                    "description": "Skirmishers throw a second projectile",
                     "gold_cost": 300,
                     "food_cost": 300,
                     "stone_cost": 0,
@@ -778,7 +1141,7 @@
                 },
                 "imperial": {
                     "name": "El Dorado",
-                    "description": "+40 hit points for Eagle Warriors",
+                    "description": "Eagle Warriors gain +40 HP",
                     "gold_cost": 450,
                     "food_cost": 750,
                     "stone_cost": 0,
@@ -791,12 +1154,18 @@
         {
             "id": 24,
             "name": "Mongols",
-            "speciality": [3],
-            "UU": [29],
-            "TeamBonus": "Scout Cavalry +2 Line of Sight",
-            "CivBonus": ["Cavalry archers fire 25% faster",
+            "speciality": [
+                3
+            ],
+            "UU": [
+                29
+            ],
+            "TeamBonus": "Scout Cavalry, Light Cavalry, Hussar +2 line of sight",
+            "CivBonus": [
+                "Cavalry archers fire 25% faster",
                 "Light Cavalry, Hussars, and Steppe Lancers have +30% HP",
-                "Hunters work +50% faster"],
+                "Hunters work +40% faster"
+            ],
             "technology": {
                 "castle": {
                     "name": "Nomads",
@@ -822,11 +1191,17 @@
         {
             "id": 25,
             "name": "Persians",
-            "speciality": [2],
-            "UU": [30],
-            "TeamBonus": "Knights have +2 attack against archers",
-            "CivBonus": ["Start game with +50 food and +50 wood",
-                "Town Centers and Docks have double HP and work 10%/15%/20% faster in the Feudal/Castle/Imperial Age"],
+            "speciality": [
+                2
+            ],
+            "UU": [
+                30
+            ],
+            "TeamBonus": "Knights have +2 attack vs archers",
+            "CivBonus": [
+                "Start game with +50 food and +50 wood",
+                "Town Centers and Docks have 2x HP and work 10%/15%/20% faster in the Feudal/Castle/Imperial Age"
+            ],
             "technology": {
                 "castle": {
                     "name": "Kamandaran",
@@ -850,14 +1225,60 @@
             "Wonder": "Taq Kasra"
         },
         {
+            "id": 41,
+            "name": "Poles",
+            "speciality": [
+                2
+            ],
+            "UU": [
+                57,
+                58
+            ],
+            "TeamBonus": "Scout Cavalry, Light Cavalry, Hussar +1 attack vs Archers",
+            "CivBonus": [
+                "Villagers regenerate 10/15/20 HP per minute in Feudal/Castle/Imperial Age",
+                "Folwark replaces Mill",
+                "Stone Miners generate gold in addition to stone"
+            ],
+            "technology": {
+                "castle": {
+                    "name": "Szlachta Privileges",
+                    "description": "Knights cost -60% gold",
+                    "gold_cost": 300,
+                    "food_cost": 500,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 45
+                },
+                "imperial": {
+                    "name": "Lechitic Legacy",
+                    "description": "Light Cavalry deals trample damage",
+                    "gold_cost": 550,
+                    "food_cost": 750,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 60
+                }
+            },
+            "Wonder": ""
+        },
+        {
             "id": 26,
             "name": "Portuguese",
-            "speciality": [7, 10],
-            "UU": [31, 32],
-            "TeamBonus": "Free Cartography from Dark Age",
-            "CivBonus": ["All units cost -20% gold",
-                "All ships have +10% HP",
-                "The Feitoria becomes available for building in the Imperial Age"],
+            "speciality": [
+                7,
+                10
+            ],
+            "UU": [
+                31,
+                32
+            ],
+            "TeamBonus": "Technologies researched 25% faster",
+            "CivBonus": [
+                "Units cost -20% gold",
+                "Ships have +10% HP",
+                "Feitoria available to build in Imperial Age"
+            ],
             "technology": {
                 "castle": {
                     "name": "Carrack",
@@ -870,7 +1291,7 @@
                 },
                 "imperial": {
                     "name": "Arquebus",
-                    "description": "Gunpowder units fire more accurately at moving targets",
+                    "description": "Gunpowder units more accurate vs moving targets",
                     "gold_cost": 400,
                     "food_cost": 700,
                     "stone_cost": 0,
@@ -881,31 +1302,77 @@
             "Wonder": "Belém Tower"
         },
         {
-            "id": 27,
-            "name": "Saracens",
-            "speciality": [2, 10],
-            "UU": [33],
-            "TeamBonus": "All foot archers have +2 attack against standard buildings",
-            "CivBonus": ["The commodity trading fee is 5%",
-                "Markets cost -100 wood",
-                "Transport Ships have double HP and +5 carry capacity",
-                "Galleys attack 20% faster",
-                "Archers (excluding Skirmishers) have +1/+2/+3 attack against standard buildings in the Feudal/Castle/Imperial Age"],
+            "id": 42,
+            "name": "Romans",
+            "speciality": [
+                8
+            ],
+            "UU": [
+                59,
+                60
+            ],
+            "TeamBonus": "Scorpion-line minimum range reduced",
+            "CivBonus": [
+                "Villagers gather, build, and repair 5% faster",
+                "Galley-line and Dromons +1/+1P armor",
+                "Infantry have 2x effect from Blacksmith armor upgrades",
+                "Scorpions cost -60% gold and benefit from Ballistics research"
+            ],
             "technology": {
                 "castle": {
-                    "name": "Madrasah",
-                    "description": "33% of a Monk's gold cost are returned if the Monk gets killed",
-                    "gold_cost": 100,
-                    "food_cost": 200,
+                    "name": "Ballistas",
+                    "description": "Scorpions fire 33% faster; Galley-line +2 attack",
+                    "gold_cost": 300,
+                    "food_cost": 0,
                     "stone_cost": 0,
-                    "wood_cost": 0,
-                    "research_time": 30
+                    "wood_cost": 400,
+                    "research_time": 45
                 },
                 "imperial": {
+                    "name": "Comitatenses",
+                    "description": "Militia-line, Knight-line, and Centurions train 50% faster and receive a charge attack",
+                    "gold_cost": 800,
+                    "food_cost": 700,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 60
+                }
+            },
+            "Wonder": ""
+        },
+        {
+            "id": 27,
+            "name": "Saracens",
+            "speciality": [
+                2,
+                10
+            ],
+            "UU": [
+                33
+            ],
+            "TeamBonus": "Foot archers +2 attack vs buildings",
+            "CivBonus": [
+                "Market trade cost only 5%",
+                "Markets cost -100 wood",
+                "Transport Ships 2x HP, 2x carry capacity",
+                "Galleys attack 20% faster",
+                "Camel units +10 HP"
+            ],
+            "technology": {
+                "castle": {
                     "name": "Zealotry",
-                    "description": "Camel Riders and Mamelukes +30 hit points",
-                    "gold_cost": 700,
-                    "food_cost": 750,
+                    "description": "Camel units +20 HP",
+                    "gold_cost": 400,
+                    "food_cost": 400,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 50
+                },
+                "imperial": {
+                    "name": "Counterweights",
+                    "description": "Trebuchets and Mangonel-line +15% attack",
+                    "gold_cost": 500,
+                    "food_cost": 650,
                     "stone_cost": 0,
                     "wood_cost": 0,
                     "research_time": 50
@@ -914,29 +1381,78 @@
             "Wonder": "Great Mosque of Samarra"
         },
         {
-            "id": 28,
-            "name": "Slavs",
-            "speciality": [8, 11],
-            "UU": [34],
-            "TeamBonus": "Military production buildings (except Castles and Kreposts) provide +5 pop",
-            "CivBonus": ["Farmers work 10% faster",
-                "Tracking is free. Since the Definitve Edition, Supplies is free",
-                "Siege Workshop units are 15% cheaper"],
+            "id": 43,
+            "name": "Sicilians",
+            "speciality": [
+                8,
+                2
+            ],
+            "UU": [
+                61
+            ],
+            "TeamBonus": "Transport Ships +5 line of sight and cost -50%",
+            "CivBonus": [
+                "Stone +100 at start",
+                "Castles built 50% faster",
+                "Town Centers built 100% faster",
+                "Land military units (except siege weapons) receive 33% less bonus damage",
+                "Farm upgrades provide +125% additional food",
+                "Donjon replaces Watch Tower-line"
+            ],
             "technology": {
                 "castle": {
-                    "name": "Orthodoxy",
-                    "description": "+3/+3 armor for Monks",
+                    "name": "First Crusade",
+                    "description": "Each Town Center (maximum 5) spawns a one-time batch of 5 Serjeants; units more resistant to conversion",
                     "gold_cost": 300,
-                    "food_cost": 200,
+                    "food_cost": 400,
                     "stone_cost": 0,
                     "wood_cost": 0,
+                    "research_time": 60
+                },
+                "imperial": {
+                    "name": "Hauberk",
+                    "description": "Knights +1/+2P armor",
+                    "gold_cost": 600,
+                    "food_cost": 700,
+                    "stone_cost": 0,
+                    "wood_cost": 0,
+                    "research_time": 45
+                }
+            },
+            "Wonder": ""
+        },
+        {
+            "id": 28,
+            "name": "Slavs",
+            "speciality": [
+                8,
+                11
+            ],
+            "UU": [
+                34
+            ],
+            "TeamBonus": "Military production buildings (except Castles and Kreposts) provide +5 pop",
+            "CivBonus": [
+                "Farmers work 10% faster",
+                "Supplies, Gambesons free",
+                "Siege Workshop units cost -15%",
+                "Monks move 20% faster"
+            ],
+            "technology": {
+                "castle": {
+                    "name": "Detinets",
+                    "description": "Replaces 40% of Castles' and Towers' stone cost with wood",
+                    "gold_cost": 200,
+                    "food_cost": 0,
+                    "stone_cost": 0,
+                    "wood_cost": 400,
                     "research_time": 40
                 },
                 "imperial": {
                     "name": "Druzhina",
                     "description": "Infantry damage adjacent units",
                     "gold_cost": 500,
-                    "food_cost": 1200,
+                    "food_cost": 900,
                     "stone_cost": 0,
                     "wood_cost": 0,
                     "research_time": 40
@@ -947,17 +1463,26 @@
         {
             "id": 29,
             "name": "Spanish",
-            "speciality": [7, 9],
-            "UU": [35, 36],
-            "TeamBonus": "Trade Carts and Trade Cogs return 25% more gold",
-            "CivBonus": ["Builders work 30% faster",
-                "Blacksmith upgrades cost no gold",
-                "Cannon Galleons have better accuracy and faster cannonballs",
-                "Hand Cannoneers and Bombard Cannons fire 15% faster"],
+            "speciality": [
+                7,
+                9
+            ],
+            "UU": [
+                35,
+                36
+            ],
+            "TeamBonus": "Trade units generate +25% gold",
+            "CivBonus": [
+                "Builders work 30% faster",
+                "Blacksmith upgrades don't cost gold",
+                "Cannon Galleons benefit from Ballistics (fire faster, more accurately)",
+                "Gunpowder units fire 18% faster",
+                "Receive +20 gold for each technology researched"
+            ],
             "technology": {
                 "castle": {
                     "name": "Inquisition",
-                    "description": "Monk conversion rate improved",
+                    "description": "Monks convert faster; Missionaries +1 range",
                     "gold_cost": 300,
                     "food_cost": 100,
                     "stone_cost": 0,
@@ -966,7 +1491,7 @@
                 },
                 "imperial": {
                     "name": "Supremacy",
-                    "description": "Increased attack, armor, and HP for Villagers",
+                    "description": "Villagers stronger in combat",
                     "gold_cost": 250,
                     "food_cost": 400,
                     "stone_cost": 0,
@@ -979,17 +1504,25 @@
         {
             "id": 30,
             "name": "Tatars",
-            "speciality": [0, 2],
-            "UU": [37, 38],
-            "TeamBonus": "Cavalry Archers have +2 Line of Sight",
-            "CivBonus": ["Herdables contain +50% food",
-                "Units deal +25% damage when attacking from hills (stacks with the regular hill attack bonus)",
-                "Thumb Ring is free",
-                "Parthian Tactics is free"],
+            "speciality": [
+                0,
+                2
+            ],
+            "UU": [
+                37,
+                38
+            ],
+            "TeamBonus": "Cavalry Archers +2 line of sight",
+            "CivBonus": [
+                "Villagers gather +50% food from herdables",
+                "New Town Centers spawn 2 Sheep starting in the Castle Age",
+                "Units deal +25% damage when fighting from higher elevation",
+                "Thumb Ring, Parthian Tactics free"
+            ],
             "technology": {
                 "castle": {
                     "name": "Silk Armor",
-                    "description": "Scout Cavalry, Steppe Lancers and Cavalry Archers have +1 pierce armor",
+                    "description": "Light Cavalry, Steppe Lancers and Cavalry Archers receive +1/+1P armor",
                     "gold_cost": 300,
                     "food_cost": 0,
                     "stone_cost": 0,
@@ -1011,15 +1544,21 @@
         {
             "id": 31,
             "name": "Teutons",
-            "speciality": [8],
-            "UU": [39],
+            "speciality": [
+                8
+            ],
+            "UU": [
+                39
+            ],
             "TeamBonus": "Units resist conversion",
-            "CivBonus": ["Monks have double healing range",
-                "Towers garrison twice as many units",
+            "CivBonus": [
+                "Monks have 2x healing range",
+                "Towers garrison 2x number of units",
                 "Murder Holes and Herbal Medicine are free",
-                "Farms are 40% cheaper",
-                "Town Centers can garrison +10 units",
-                "Barracks and Stable units receive +1 melee armor in the Castle Age and +1 in the Imperial Age"],
+                "Farms cost -40%",
+                "Town Centers garrison +10 units",
+                "Barracks and Stable units receive +1 melee armor in the Castle Age and +1 in the Imperial Age"
+            ],
             "technology": {
                 "castle": {
                     "name": "Ironclad",
@@ -1045,18 +1584,25 @@
         {
             "id": 32,
             "name": "Turks",
-            "speciality": [7],
-            "UU": [40],
+            "speciality": [
+                7
+            ],
+            "UU": [
+                40
+            ],
             "TeamBonus": "Gunpowder units are created 25% faster",
-            "CivBonus": ["Gunpowder units have +25% HP",
-                "Gunpowder technologies are 50% cheaper",
+            "CivBonus": [
+                "Gunpowder units have +25% HP",
+                "Gunpowder technologies cost -50%",
                 "Chemistry is free",
                 "Gold Miners work 20% faster",
-                "Light Cavalry and Hussar upgrades are free"],
+                "Scout Cavalry, Light Cavalry, Hussar +1P armor",
+                "Light Cavalry and Hussar upgrades are free"
+            ],
             "technology": {
                 "castle": {
                     "name": "Sipahi",
-                    "description": "Cavalry Archers +20 hit points",
+                    "description": "Cavalry Archers +20 HP",
                     "gold_cost": 150,
                     "food_cost": 350,
                     "stone_cost": 0,
@@ -1078,17 +1624,24 @@
         {
             "id": 33,
             "name": "Vietnamese",
-            "speciality": [0],
-            "UU": [41, 42],
-            "TeamBonus": "Imperial Skirmishers",
-            "CivBonus": ["Reveal enemy positions at game start",
+            "speciality": [
+                0
+            ],
+            "UU": [
+                41,
+                42
+            ],
+            "TeamBonus": "Imperial Skirmisher upgrade available in the Imperial Age",
+            "CivBonus": [
+                "Reveal enemy positions at game start",
                 "Economic upgrades cost no wood",
                 "Archery Range units have +20% HP",
-                "Conscription is free"],
+                "Conscription is free"
+            ],
             "technology": {
                 "castle": {
                     "name": "Chatras",
-                    "description": "Battle Elephants +50 hit points",
+                    "description": "Battle Elephants +100 HP",
                     "gold_cost": 250,
                     "food_cost": 250,
                     "stone_cost": 0,
@@ -1097,11 +1650,11 @@
                 },
                 "imperial": {
                     "name": "Paper Money",
-                    "description": "Tributes 500 gold to each ally",
+                    "description": "Lumberjacks slowly generate gold in addition to wood",
                     "gold_cost": 0,
-                    "food_cost": 500,
+                    "food_cost": 550,
                     "stone_cost": 0,
-                    "wood_cost": 300,
+                    "wood_cost": 200,
                     "research_time": 60
                 }
             },
@@ -1110,27 +1663,35 @@
         {
             "id": 34,
             "name": "Vikings",
-            "speciality": [8, 10],
-            "UU": [43, 44],
-            "TeamBonus": "Docks are 15% cheaper",
-            "CivBonus": ["Warships are 15%/15%/20% cheaper in the Feudal/Castle/Imperial Age",
-                "Infantry have +10%/+15%/+20% HP in the Feudal/Castle/Imperial Age",
-                "Wheelbarrow and Hand Cart are free"],
+            "speciality": [
+                8,
+                10
+            ],
+            "UU": [
+                43,
+                44
+            ],
+            "TeamBonus": "Docks cost -15%",
+            "CivBonus": [
+                "Warships cost -15%/-15%/-20% in the Feudal/Castle/Imperial Age",
+                "Infantry have +20% HP from Feudal Age",
+                "Wheelbarrow and Hand Cart are free"
+            ],
             "technology": {
                 "castle": {
                     "name": "Chieftains",
-                    "description": "Infantry get attack bonus against cavalry",
-                    "gold_cost": 300,
-                    "food_cost": 400,
+                    "description": "Iinfantry deal bonus damage to cavalry, generate gold when killing villagers, trade units, and monks",
+                    "gold_cost": 450,
+                    "food_cost": 600,
                     "stone_cost": 0,
                     "wood_cost": 0,
                     "research_time": 40
                 },
                 "imperial": {
-                    "name": "Berserkergang",
-                    "description": "Berserks regenerate faster",
-                    "gold_cost": 400,
-                    "food_cost": 850,
+                    "name": "Bogsveigar",
+                    "description": "Archer-line and Longboats +1 attack",
+                    "gold_cost": 500,
+                    "food_cost": 650,
                     "stone_cost": 0,
                     "wood_cost": 0,
                     "research_time": 40
