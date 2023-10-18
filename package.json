@@ -6,16 +6,30 @@
     "main": "",
     "type": "module",
     "scripts": {
-        "build": "rollup -c --bundleConfigAsCjs",
-        "dev": "rollup -cw"
+        "build": "tsc && rollup -c --bundleConfigAsCjs",
+        "dev": "tsc && rollup -cw"
     },
     "devDependencies": {
-        "@rollup/plugin-json": "^6.0.0",
+        "@rollup/plugin-commonjs": "^25.0.7",
+        "@rollup/plugin-json": "^6.0.1",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@rollup/plugin-typescript": "^11.1.5",
+        "@types/react": "^18.0.21",
+        "@types/react-dom": "^18.0.6",
         "@types/sass": "^1.43.1",
+        "deepmerge": "^4.3.1",
         "node-sass": "^9.0.0",
-        "rollup": "^3.28.0",
-        "rollup-plugin-scss": "^4.0.0",
-        "rollup-plugin-terser": "^7.0.2",
-        "sass": "^1.48.0"
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "rimraf": "^5.0.5",
+        "rollup": "^4.1.4",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-scss": "^3.0.0",
+        "sass": "^1.69.3",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "tslib": "^2.6.2"
     }
 }
