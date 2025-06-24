@@ -38,11 +38,20 @@
             ],
             "TeamBonus": "Relics generate 33% more gold",
             "CivBonus": [
-                "Start the game with Eagle Scout",
                 "Villagers carry +3 extra resources",
                 "Military units are created 11% faster",
-                "Monks gain 5 HP for every Monastery technology",
-                "Start with +50 gold"
+                "Monks gain 5 HP for every Monastery technology"
+            ],
+            "StartingBonuses": [
+                "Start the game with Eagle Scout",
+                "Start with +50 gold",
+                "3 Villagers, Town Center, Scout Cavalry (replaced by Eagle Scout)"
+            ],
+            "StandardOpenings": [
+                "22 population villager rush with Eagle Warriors",
+                "Fast Castle into Eagle Warriors and Monks",
+                "Drush + Fast Castle for early aggression",
+                "Forward building strategy with villager advantage"
             ],
             "technology": {
                 "castle": {
@@ -124,6 +133,16 @@
                 "Stable units cost 15%/20% less in the Castle/Imperial Age",
                 "Ships move +10% faster"
             ],
+            "StartingBonuses": [
+                "3 Villagers, Town Center, Scout Cavalry",
+                "Standard starting resources (200 Food, 200 Wood, 100 Gold, 100 Stone)"
+            ],
+            "StandardOpenings": [
+                "Scout rush into Knight rush (cheaper cavalry)",
+                "22 population Fast Castle into Camel Archer",
+                "Archer rush with tower support",
+                "Fast economy boom due to faster villagers"
+            ],
             "technology": {
                 "castle": {
                     "name": "Kasbah",
@@ -201,6 +220,17 @@
                 "Town Centers cost -50% wood starting in the Castle Age",
                 "Foot archers (except Skirmishers) have +1/+2 range in the Castle/Imperial Age",
                 "Shepherds work 25% faster"
+            ],
+            "StartingBonuses": [
+                "3 Villagers, Town Center, Scout Cavalry",
+                "Standard starting resources",
+                "Faster sheep gathering from start"
+            ],
+            "StandardOpenings": [
+                "Archer rush with range advantage",
+                "22 population Fast Castle into Longbowmen",
+                "Defensive play with cheaper Town Centers",
+                "Scout rush into crossbow transition"
             ],
             "technology": {
                 "castle": {
