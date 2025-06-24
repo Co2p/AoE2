@@ -72,6 +72,8 @@ function createCivInfoHTML(civ: civDataModel) {
     const teamBonusHeader = header("Team bonus", headerSize);
     const civilizationBonusHeader = header("Civilization bonuses", headerSize);
     const specialityHeader = header("Specialty", headerSize);
+    const startingBonusesHeader = header("Starting Bonuses", headerSize);
+    const standardOpeningsHeader = header("Standard Openings", headerSize);
     
     const specialityList = createUnorderedListFromArray(getDataFromArrayForIds(civ.speciality ?? [], specialities).map(x => x?.name));
     const uniqueUnitList = createUnorderedListFromArray(getDataFromArrayForIds(civ.UU ?? [], uniqueUnits).map(uniqueUnit => uniqueUnit.name));
@@ -79,6 +81,8 @@ function createCivInfoHTML(civ: civDataModel) {
     const teamBonus = document.createElement("p");
     teamBonus.innerText = civ.TeamBonus ?? "";
     const civilizationBonusList = createUnorderedListFromArray(civBonus);
+    const startingBonusesList = createUnorderedListFromArray(civ.StartingBonuses ?? []);
+    const standardOpeningsList = createUnorderedListFromArray(civ.StandardOpenings ?? []);
 
     civInfoStruct.push([specialityHeader, specialityList]);
     civInfoStruct.push([uniqueUnitHeader, uniqueUnitList]);
@@ -86,6 +90,14 @@ function createCivInfoHTML(civ: civDataModel) {
     civInfoStruct.push(createAgeTechComponent("Imperial", technology.imperial, headerSize));
     civInfoStruct.push([teamBonusHeader, teamBonus]);
     civInfoStruct.push([civilizationBonusHeader, civilizationBonusList]);
+    
+    // Only add Starting Bonuses and Standard Openings sections if they have content
+    if (civ.StartingBonuses && civ.StartingBonuses.length > 0) {
+        civInfoStruct.push([startingBonusesHeader, startingBonusesList]);
+    }
+    if (civ.StandardOpenings && civ.StandardOpenings.length > 0) {
+        civInfoStruct.push([standardOpeningsHeader, standardOpeningsList]);
+    }
 
     civInfoStruct.forEach((info) => {
         civDiv.appendChild(createDivOfAllElementsInArray(info, "item"));
