@@ -460,10 +460,21 @@
             ],
             "TeamBonus": "Farms +10% food",
             "CivBonus": [
-                "Start with +3 villagers, -50 wood, -200 food",
                 "Town Centers support 10 population and +5 LOS",
                 "Technologies cost 10%/15%/20% less in the Feudal/Castle/Imperial Age",
                 "Demolition Ships have +50% HP"
+            ],
+            "StartingBonuses": [
+                "Start with 6 villagers instead of 3",
+                "Start with 150 wood instead of 200 wood",
+                "Start with 0 food instead of 200 food",
+                "Town Center supports 15 population instead of 5"
+            ],
+            "StandardOpenings": [
+                "6 villager advantage allows for fast Feudal Age",
+                "All-in feudal aggression with early archer rush",
+                "Fast Castle with economic advantage",
+                "Early walling due to Great Wall technology advantage"
             ],
             "technology": {
                 "castle": {
