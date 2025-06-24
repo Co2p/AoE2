@@ -16,14 +16,18 @@
             <option value="tech">Unique technologies</option>
             <option value="team-bonus">Team bonus</option>
         </select>
-        <select class="form-control" id="civ-dropdown" href="#">
-        </select>
-        <select hidden class="form-control" id="specialities-dropdown" href="#">
-        </select>
-        <select hidden class="form-control" id="tech-dropdown" href="#">
-        </select>
-        <select hidden class="form-control" id="team-bonus-dropdown" href="#">
-        </select>
+        <input class="form-control" id="civ-dropdown" list="civ-datalist" placeholder="Search civilizations...">
+        <datalist id="civ-datalist">
+        </datalist>
+        <input hidden class="form-control" id="specialities-dropdown" list="specialities-datalist" placeholder="Search specialities...">
+        <datalist id="specialities-datalist">
+        </datalist>
+        <input hidden class="form-control" id="tech-dropdown" list="tech-datalist" placeholder="Search technologies...">
+        <datalist id="tech-datalist">
+        </datalist>
+        <input hidden class="form-control" id="team-bonus-dropdown" list="team-bonus-datalist" placeholder="Search team bonuses...">
+        <datalist id="team-bonus-datalist">
+        </datalist>
     </nav>
     <br />
     <div class="container">

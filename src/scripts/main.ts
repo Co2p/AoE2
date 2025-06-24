@@ -27,9 +27,21 @@ function populateDropdown(dropdownElement: HTMLElement, dropdownItems: dropdownI
         let option = document.createElement("option") as HTMLOptionElement;
         option.className = "dropdown-item";
         option.innerText = dropdownItem.name;
-        option.value = dropdownItem.id.toString();
+        option.value = dropdownItem.name; // For datalist, value should be the display text
+        option.setAttribute('data-id', dropdownItem.id.toString()); // Store the ID in a data attribute
         dropdownElement.appendChild(option);
     });
+}
+
+/**
+ * Get the ID from the selected text in a datalist
+ * @param {string} selectedText The selected text from the input
+ * @param {dropdownItem[]} dropdownItems The array of dropdown items
+ * @returns {number} The ID of the selected item, or -1 if not found
+ */
+function getIdFromSelectedText(selectedText: string, dropdownItems: dropdownItem[]): number {
+    const item = dropdownItems.find(item => item.name === selectedText);
+    return item ? item.id : -1;
 }
 
 function emptyCivInfoHTML() {
@@ -223,35 +235,44 @@ function formatTechnologyString(technologyAge: ageDataModel) {
 }
 
 function civDropdown() {
-    let civDropdown = document.getElementById("civ-dropdown");
-    if (civDropdown) {
-        civDropdown.onchange = (event) => {
-            const civId = (event.target as HTMLSelectElement).value;
-            createCivInfoHTMLUsingCivId(Number(civId));
+    let civDropdown = document.getElementById("civ-dropdown") as HTMLInputElement;
+    let civDatalist = document.getElementById("civ-datalist");
+    if (civDropdown && civDatalist) {
+        const civOptions = sortDropdown(civs);
+        civDropdown.oninput = (event) => {
+            const selectedText = (event.target as HTMLInputElement).value;
+            const civId = getIdFromSelectedText(selectedText, civOptions);
+            createCivInfoHTMLUsingCivId(civId);
         };
-        populateDropdown(civDropdown, sortDropdown(civs));
+        populateDropdown(civDatalist, civOptions);
     }
 }
 
 function techDropdown() {
-    let techDropdown = document.getElementById("tech-dropdown");
-    if (techDropdown) {
-        techDropdown.onchange = (event) => {
-            const civId = (event.target as HTMLSelectElement).value;
-            createCivInfoHTMLUsingCivId(Number(civId));
+    let techDropdown = document.getElementById("tech-dropdown") as HTMLInputElement;
+    let techDatalist = document.getElementById("tech-datalist");
+    if (techDropdown && techDatalist) {
+        const techOptions = sortDropdown(getAllTechnologies());
+        techDropdown.oninput = (event) => {
+            const selectedText = (event.target as HTMLInputElement).value;
+            const civId = getIdFromSelectedText(selectedText, techOptions);
+            createCivInfoHTMLUsingCivId(civId);
         };
-        populateDropdown(techDropdown, sortDropdown(getAllTechnologies()));
+        populateDropdown(techDatalist, techOptions);
     }
 }
 
 function teamBonusDropdown() {
-    let teamBonusDropdown = document.getElementById("team-bonus-dropdown");
-    if (teamBonusDropdown) {
-        teamBonusDropdown.onchange = (event) => {
-            const civId = (event.target as HTMLSelectElement).value;
-            createCivInfoHTMLUsingCivId(Number(civId));
+    let teamBonusDropdown = document.getElementById("team-bonus-dropdown") as HTMLInputElement;
+    let teamBonusDatalist = document.getElementById("team-bonus-datalist");
+    if (teamBonusDropdown && teamBonusDatalist) {
+        const teamBonusOptions = sortDropdown(getAllTeamBonuses());
+        teamBonusDropdown.oninput = (event) => {
+            const selectedText = (event.target as HTMLInputElement).value;
+            const civId = getIdFromSelectedText(selectedText, teamBonusOptions);
+            createCivInfoHTMLUsingCivId(civId);
         };
-        populateDropdown(teamBonusDropdown, sortDropdown(getAllTeamBonuses()));
+        populateDropdown(teamBonusDatalist, teamBonusOptions);
     }
 }
 
@@ -298,17 +319,18 @@ function getAllTechnologies() {
 }
 
 function specialitiesDropdown(): void {
-    let specialitiesDropdown = document.getElementById("specialities-dropdown") as HTMLSelectElement;
-    if(specialitiesDropdown) {
-        specialitiesDropdown.onchange = (event) => {
-            
-            const specialityId = (event.target as HTMLSelectElement)?.value;
+    let specialitiesDropdown = document.getElementById("specialities-dropdown") as HTMLInputElement;
+    let specialitiesDatalist = document.getElementById("specialities-datalist");
+    if(specialitiesDropdown && specialitiesDatalist) {
+        specialitiesDropdown.oninput = (event) => {
+            const selectedText = (event.target as HTMLInputElement)?.value;
+            const specialityId = getIdFromSelectedText(selectedText, specialities);
             emptyCivInfoHTML();
-            if (idIsDefined(Number(specialityId))) {
-                civData.GetCivBySpecialtyId(Number(specialityId)).forEach(civ => civ && createCivInfoHTML(civ));
+            if (idIsDefined(specialityId)) {
+                civData.GetCivBySpecialtyId(specialityId).forEach(civ => civ && createCivInfoHTML(civ));
             }
         };
-        populateDropdown(specialitiesDropdown, specialities);
+        populateDropdown(specialitiesDatalist, specialities);
     }
 }
 
@@ -330,19 +352,19 @@ function idIsUnDefined(id: number): boolean {
 let pickDropdown = document.getElementById("pick-dropdown") as HTMLSelectElement;
 
 pickDropdown.onchange = (event) => {
-    let specialitiesDropdown = document.getElementById("specialities-dropdown") as HTMLSelectElement;
-    let civDropdown = document.getElementById("civ-dropdown") as HTMLSelectElement;
-    let techDropdown = document.getElementById("tech-dropdown") as HTMLSelectElement;
-    let teamBonusDropdown = document.getElementById("team-bonus-dropdown") as HTMLSelectElement;
+    let specialitiesDropdown = document.getElementById("specialities-dropdown") as HTMLInputElement;
+    let civDropdown = document.getElementById("civ-dropdown") as HTMLInputElement;
+    let techDropdown = document.getElementById("tech-dropdown") as HTMLInputElement;
+    let teamBonusDropdown = document.getElementById("team-bonus-dropdown") as HTMLInputElement;
     specialitiesDropdown.hidden = (event.target as HTMLOptionElement).value !== "spec";
     techDropdown.hidden = (event.target as HTMLOptionElement).value !== "tech";
     civDropdown.hidden = (event.target as HTMLOptionElement).value !== "civ";
     teamBonusDropdown.hidden = (event.target as HTMLOptionElement).value !== "team-bonus";
 
-    specialitiesDropdown.value = "-1";
-    civDropdown.value = "-1";
-    techDropdown.value = "-1";
-    teamBonusDropdown.value = "-1";
+    specialitiesDropdown.value = "";
+    civDropdown.value = "";
+    techDropdown.value = "";
+    teamBonusDropdown.value = "";
 }
 
 specialitiesDropdown();
