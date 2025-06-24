@@ -22,6 +22,8 @@ export type civDataModel = {
     UU?: number[];
     TeamBonus?: string;
     CivBonus?: string[];
+    StartingBonuses?: string[];
+    StandardOpenings?: string[];
 };
 export declare class Civ {
     civs: civDataModel[];
